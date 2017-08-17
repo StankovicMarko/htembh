@@ -1,0 +1,874 @@
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:22  column:21  ----[0m
+
+  [1mNo such namespace: l, could not locate l.cljs, l.cljc, or JavaScript source providing ""[0m
+
+  [36m18[0m  [36m                    "/logout"[0m
+  [36m19[0m  [36m                    {:handler (fn [] (session/remove! :identity))})}[0m
+  [36m20[0m  [36m       [:i.fa.fa-user] " " id " | sign out"]]][0m
+  [36m21[0m  [36m    [:ul.nav.navbar-nav.pull-xs-right[0m
+  [33m22[0m  [1m     [:li.nav-item [l/login-button]][0m
+  [0m  [0m  [33m                    ^--- No such namespace: l, could not locate l.cljs, l.cljc, or JavaScript source providing ""[0m
+  [36m23[0m  [36m     [:li.nav-item [reg/registration-button]]]))[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m(defn nav-link [uri title page collapsed?][0m
+  [36m26[0m  [36m  [:li.nav-item[0m
+  [36m27[0m  [36m   {:class (when (= page (session/get :page)) "active")}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:22  column:21  ----[0m
+
+  [1mUse of undeclared Var l/login-button[0m
+
+  [36m18[0m  [36m                    "/logout"[0m
+  [36m19[0m  [36m                    {:handler (fn [] (session/remove! :identity))})}[0m
+  [36m20[0m  [36m       [:i.fa.fa-user] " " id " | sign out"]]][0m
+  [36m21[0m  [36m    [:ul.nav.navbar-nav.pull-xs-right[0m
+  [33m22[0m  [1m     [:li.nav-item [l/login-button]][0m
+  [0m  [0m  [33m                    ^--- Use of undeclared Var l/login-button[0m
+  [36m23[0m  [36m     [:li.nav-item [reg/registration-button]]]))[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m(defn nav-link [uri title page collapsed?][0m
+  [36m26[0m  [36m  [:li.nav-item[0m
+  [36m27[0m  [36m   {:class (when (= page (session/get :page)) "active")}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:23  column:21  ----[0m
+
+  [1mNo such namespace: reg, could not locate reg.cljs, reg.cljc, or JavaScript source providing ""[0m
+
+  [36m19[0m  [36m                    {:handler (fn [] (session/remove! :identity))})}[0m
+  [36m20[0m  [36m       [:i.fa.fa-user] " " id " | sign out"]]][0m
+  [36m21[0m  [36m    [:ul.nav.navbar-nav.pull-xs-right[0m
+  [36m22[0m  [36m     [:li.nav-item [l/login-button]][0m
+  [33m23[0m  [1m     [:li.nav-item [reg/registration-button]]]))[0m
+  [0m  [0m  [33m                    ^--- No such namespace: reg, could not locate reg.cljs, reg.cljc, or JavaScript source providing ""[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m(defn nav-link [uri title page collapsed?][0m
+  [36m26[0m  [36m  [:li.nav-item[0m
+  [36m27[0m  [36m   {:class (when (= page (session/get :page)) "active")}[0m
+  [36m28[0m  [36m   [:a.nav-link[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:23  column:21  ----[0m
+
+  [1mUse of undeclared Var reg/registration-button[0m
+
+  [36m19[0m  [36m                    {:handler (fn [] (session/remove! :identity))})}[0m
+  [36m20[0m  [36m       [:i.fa.fa-user] " " id " | sign out"]]][0m
+  [36m21[0m  [36m    [:ul.nav.navbar-nav.pull-xs-right[0m
+  [36m22[0m  [36m     [:li.nav-item [l/login-button]][0m
+  [33m23[0m  [1m     [:li.nav-item [reg/registration-button]]]))[0m
+  [0m  [0m  [33m                    ^--- Use of undeclared Var reg/registration-button[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m(defn nav-link [uri title page collapsed?][0m
+  [36m26[0m  [36m  [:li.nav-item[0m
+  [36m27[0m  [36m   {:class (when (= page (session/get :page)) "active")}[0m
+  [36m28[0m  [36m   [:a.nav-link[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.859 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:22  column:21  ----[0m
+
+  [1mNo such namespace: l, could not locate l.cljs, l.cljc, or JavaScript source providing ""[0m
+
+  [36m18[0m  [36m                    "/logout"[0m
+  [36m19[0m  [36m                    {:handler (fn [] (session/remove! :identity))})}[0m
+  [36m20[0m  [36m       [:i.fa.fa-user] " " id " | sign out"]]][0m
+  [36m21[0m  [36m    [:ul.nav.navbar-nav.pull-xs-right[0m
+  [33m22[0m  [1m     [:li.nav-item [l/login-button]][0m
+  [0m  [0m  [33m                    ^--- No such namespace: l, could not locate l.cljs, l.cljc, or JavaScript source providing ""[0m
+  [36m23[0m  [36m     [:li.nav-item [reg/registration-button]]]))[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m;; (defn nav-link [uri title page collapsed?][0m
+  [36m26[0m  [36m;;   [:li.nav-item[0m
+  [36m27[0m  [36m;;    {:class (when (= page (session/get :page)) "active")}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:22  column:21  ----[0m
+
+  [1mUse of undeclared Var l/login-button[0m
+
+  [36m18[0m  [36m                    "/logout"[0m
+  [36m19[0m  [36m                    {:handler (fn [] (session/remove! :identity))})}[0m
+  [36m20[0m  [36m       [:i.fa.fa-user] " " id " | sign out"]]][0m
+  [36m21[0m  [36m    [:ul.nav.navbar-nav.pull-xs-right[0m
+  [33m22[0m  [1m     [:li.nav-item [l/login-button]][0m
+  [0m  [0m  [33m                    ^--- Use of undeclared Var l/login-button[0m
+  [36m23[0m  [36m     [:li.nav-item [reg/registration-button]]]))[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m;; (defn nav-link [uri title page collapsed?][0m
+  [36m26[0m  [36m;;   [:li.nav-item[0m
+  [36m27[0m  [36m;;    {:class (when (= page (session/get :page)) "active")}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:23  column:21  ----[0m
+
+  [1mNo such namespace: reg, could not locate reg.cljs, reg.cljc, or JavaScript source providing ""[0m
+
+  [36m19[0m  [36m                    {:handler (fn [] (session/remove! :identity))})}[0m
+  [36m20[0m  [36m       [:i.fa.fa-user] " " id " | sign out"]]][0m
+  [36m21[0m  [36m    [:ul.nav.navbar-nav.pull-xs-right[0m
+  [36m22[0m  [36m     [:li.nav-item [l/login-button]][0m
+  [33m23[0m  [1m     [:li.nav-item [reg/registration-button]]]))[0m
+  [0m  [0m  [33m                    ^--- No such namespace: reg, could not locate reg.cljs, reg.cljc, or JavaScript source providing ""[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m;; (defn nav-link [uri title page collapsed?][0m
+  [36m26[0m  [36m;;   [:li.nav-item[0m
+  [36m27[0m  [36m;;    {:class (when (= page (session/get :page)) "active")}[0m
+  [36m28[0m  [36m;;    [:a.nav-link[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:23  column:21  ----[0m
+
+  [1mUse of undeclared Var reg/registration-button[0m
+
+  [36m19[0m  [36m                    {:handler (fn [] (session/remove! :identity))})}[0m
+  [36m20[0m  [36m       [:i.fa.fa-user] " " id " | sign out"]]][0m
+  [36m21[0m  [36m    [:ul.nav.navbar-nav.pull-xs-right[0m
+  [36m22[0m  [36m     [:li.nav-item [l/login-button]][0m
+  [33m23[0m  [1m     [:li.nav-item [reg/registration-button]]]))[0m
+  [0m  [0m  [33m                    ^--- Use of undeclared Var reg/registration-button[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m;; (defn nav-link [uri title page collapsed?][0m
+  [36m26[0m  [36m;;   [:li.nav-item[0m
+  [36m27[0m  [36m;;    {:class (when (= page (session/get :page)) "active")}[0m
+  [36m28[0m  [36m;;    [:a.nav-link[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:76  column:5  ----[0m
+
+  [1mNo such namespace: qs, could not locate qs.cljs, qs.cljc, or JavaScript source providing ""[0m
+
+  [36m72[0m  [36m     "this is the story of htembh... work in progress"]]])[0m
+  [36m73[0m  [36m[0m
+  [36m74[0m  [36m(defn htembh-page [][0m
+  [36m75[0m  [36m  [:div.container[0m
+  [33m76[0m  [1m   (qs/get-questions-btn)])[0m
+  [0m  [0m  [33m    ^--- No such namespace: qs, could not locate qs.cljs, qs.cljc, or JavaScript source providing ""[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn about-page [][0m
+  [36m79[0m  [36m  [:div.container[0m
+  [36m80[0m  [36m   [:div.row[0m
+  [36m81[0m  [36m    [:div.col-md-12[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:76  column:5  ----[0m
+
+  [1mUse of undeclared Var qs/get-questions-btn[0m
+
+  [36m72[0m  [36m     "this is the story of htembh... work in progress"]]])[0m
+  [36m73[0m  [36m[0m
+  [36m74[0m  [36m(defn htembh-page [][0m
+  [36m75[0m  [36m  [:div.container[0m
+  [33m76[0m  [1m   (qs/get-questions-btn)])[0m
+  [0m  [0m  [33m    ^--- Use of undeclared Var qs/get-questions-btn[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn about-page [][0m
+  [36m79[0m  [36m  [:div.container[0m
+  [36m80[0m  [36m   [:div.row[0m
+  [36m81[0m  [36m    [:div.col-md-12[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:105  column:1  ----[0m
+
+  [1mabout-page at line 78 is being replaced[0m
+
+  [36m101[0m  [36m   [:div.row[0m
+  [36m102[0m  [36m    [:a {:href "/#/about"} "About this site"]]])[0m
+  [36m103[0m  [36m[0m
+  [36m104[0m  [36m[0m
+  [33m105[0m  [1m(defn about-page [][0m
+  [0m   [0m  [33m^--- about-page at line 78 is being replaced[0m
+  [36m106[0m  [36m  [:div.container[0m
+  [36m107[0m  [36m   [:div.row[0m
+  [36m108[0m  [36m    [:div.col-md-12[0m
+  [36m109[0m  [36m     [:img {:src (str js/context "/img/warning_clojure.png")}]]]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:111  column:1  ----[0m
+
+  [1mhome-page at line 93 is being replaced[0m
+
+  [36m107[0m  [36m   [:div.row[0m
+  [36m108[0m  [36m    [:div.col-md-12[0m
+  [36m109[0m  [36m     [:img {:src (str js/context "/img/warning_clojure.png")}]]]])[0m
+  [36m110[0m  [36m[0m
+  [33m111[0m  [1m(defn home-page [][0m
+  [0m   [0m  [33m^--- home-page at line 93 is being replaced[0m
+  [36m112[0m  [36m  [:div.container[0m
+  [36m113[0m  [36m   (when-let [docs (session/get :docs)][0m
+  [36m114[0m  [36m     [:div.row>div.col-sm-12[0m
+  [36m115[0m  [36m      [:div {:dangerouslySetInnerHTML[0m
+  [36m116[0m  [36m             {:__html (md->html docs)}}]])])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.039 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:22  column:21  ----[0m
+
+  [1mNo such namespace: l, could not locate l.cljs, l.cljc, or JavaScript source providing ""[0m
+
+  [36m18[0m  [36m                    "/logout"[0m
+  [36m19[0m  [36m                    {:handler (fn [] (session/remove! :identity))})}[0m
+  [36m20[0m  [36m       [:i.fa.fa-user] " " id " | sign out"]]][0m
+  [36m21[0m  [36m    [:ul.nav.navbar-nav.pull-xs-right[0m
+  [33m22[0m  [1m     [:li.nav-item [l/login-button]][0m
+  [0m  [0m  [33m                    ^--- No such namespace: l, could not locate l.cljs, l.cljc, or JavaScript source providing ""[0m
+  [36m23[0m  [36m     [:li.nav-item [reg/registration-button]]]))[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m;; (defn nav-link [uri title page collapsed?][0m
+  [36m26[0m  [36m;;   [:li.nav-item[0m
+  [36m27[0m  [36m;;    {:class (when (= page (session/get :page)) "active")}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:22  column:21  ----[0m
+
+  [1mUse of undeclared Var l/login-button[0m
+
+  [36m18[0m  [36m                    "/logout"[0m
+  [36m19[0m  [36m                    {:handler (fn [] (session/remove! :identity))})}[0m
+  [36m20[0m  [36m       [:i.fa.fa-user] " " id " | sign out"]]][0m
+  [36m21[0m  [36m    [:ul.nav.navbar-nav.pull-xs-right[0m
+  [33m22[0m  [1m     [:li.nav-item [l/login-button]][0m
+  [0m  [0m  [33m                    ^--- Use of undeclared Var l/login-button[0m
+  [36m23[0m  [36m     [:li.nav-item [reg/registration-button]]]))[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m;; (defn nav-link [uri title page collapsed?][0m
+  [36m26[0m  [36m;;   [:li.nav-item[0m
+  [36m27[0m  [36m;;    {:class (when (= page (session/get :page)) "active")}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:23  column:21  ----[0m
+
+  [1mNo such namespace: reg, could not locate reg.cljs, reg.cljc, or JavaScript source providing ""[0m
+
+  [36m19[0m  [36m                    {:handler (fn [] (session/remove! :identity))})}[0m
+  [36m20[0m  [36m       [:i.fa.fa-user] " " id " | sign out"]]][0m
+  [36m21[0m  [36m    [:ul.nav.navbar-nav.pull-xs-right[0m
+  [36m22[0m  [36m     [:li.nav-item [l/login-button]][0m
+  [33m23[0m  [1m     [:li.nav-item [reg/registration-button]]]))[0m
+  [0m  [0m  [33m                    ^--- No such namespace: reg, could not locate reg.cljs, reg.cljc, or JavaScript source providing ""[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m;; (defn nav-link [uri title page collapsed?][0m
+  [36m26[0m  [36m;;   [:li.nav-item[0m
+  [36m27[0m  [36m;;    {:class (when (= page (session/get :page)) "active")}[0m
+  [36m28[0m  [36m;;    [:a.nav-link[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:23  column:21  ----[0m
+
+  [1mUse of undeclared Var reg/registration-button[0m
+
+  [36m19[0m  [36m                    {:handler (fn [] (session/remove! :identity))})}[0m
+  [36m20[0m  [36m       [:i.fa.fa-user] " " id " | sign out"]]][0m
+  [36m21[0m  [36m    [:ul.nav.navbar-nav.pull-xs-right[0m
+  [36m22[0m  [36m     [:li.nav-item [l/login-button]][0m
+  [33m23[0m  [1m     [:li.nav-item [reg/registration-button]]]))[0m
+  [0m  [0m  [33m                    ^--- Use of undeclared Var reg/registration-button[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m;; (defn nav-link [uri title page collapsed?][0m
+  [36m26[0m  [36m;;   [:li.nav-item[0m
+  [36m27[0m  [36m;;    {:class (when (= page (session/get :page)) "active")}[0m
+  [36m28[0m  [36m;;    [:a.nav-link[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:76  column:5  ----[0m
+
+  [1mNo such namespace: qs, could not locate qs.cljs, qs.cljc, or JavaScript source providing ""[0m
+
+  [36m72[0m  [36m     "this is the story of htembh... work in progress"]]])[0m
+  [36m73[0m  [36m[0m
+  [36m74[0m  [36m(defn htembh-page [][0m
+  [36m75[0m  [36m  [:div.container[0m
+  [33m76[0m  [1m   (qs/get-questions-btn)])[0m
+  [0m  [0m  [33m    ^--- No such namespace: qs, could not locate qs.cljs, qs.cljc, or JavaScript source providing ""[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn about-page [][0m
+  [36m79[0m  [36m  [:div.container[0m
+  [36m80[0m  [36m   [:div.row[0m
+  [36m81[0m  [36m    [:div.col-md-12[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:76  column:5  ----[0m
+
+  [1mUse of undeclared Var qs/get-questions-btn[0m
+
+  [36m72[0m  [36m     "this is the story of htembh... work in progress"]]])[0m
+  [36m73[0m  [36m[0m
+  [36m74[0m  [36m(defn htembh-page [][0m
+  [36m75[0m  [36m  [:div.container[0m
+  [33m76[0m  [1m   (qs/get-questions-btn)])[0m
+  [0m  [0m  [33m    ^--- Use of undeclared Var qs/get-questions-btn[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn about-page [][0m
+  [36m79[0m  [36m  [:div.container[0m
+  [36m80[0m  [36m   [:div.row[0m
+  [36m81[0m  [36m    [:div.col-md-12[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:105  column:1  ----[0m
+
+  [1mabout-page at line 78 is being replaced[0m
+
+  [36m101[0m  [36m   [:div.row[0m
+  [36m102[0m  [36m    [:a {:href "/#/about"} "About this site"]]])[0m
+  [36m103[0m  [36m[0m
+  [36m104[0m  [36m[0m
+  [33m105[0m  [1m(defn about-page [][0m
+  [0m   [0m  [33m^--- about-page at line 78 is being replaced[0m
+  [36m106[0m  [36m  [:div.container[0m
+  [36m107[0m  [36m   [:div.row[0m
+  [36m108[0m  [36m    [:div.col-md-12[0m
+  [36m109[0m  [36m     [:img {:src (str js/context "/img/warning_clojure.png")}]]]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:111  column:1  ----[0m
+
+  [1mhome-page at line 93 is being replaced[0m
+
+  [36m107[0m  [36m   [:div.row[0m
+  [36m108[0m  [36m    [:div.col-md-12[0m
+  [36m109[0m  [36m     [:img {:src (str js/context "/img/warning_clojure.png")}]]]])[0m
+  [36m110[0m  [36m[0m
+  [33m111[0m  [1m(defn home-page [][0m
+  [0m   [0m  [33m^--- home-page at line 93 is being replaced[0m
+  [36m112[0m  [36m  [:div.container[0m
+  [36m113[0m  [36m   (when-let [docs (session/get :docs)][0m
+  [36m114[0m  [36m     [:div.row>div.col-sm-12[0m
+  [36m115[0m  [36m      [:div {:dangerouslySetInnerHTML[0m
+  [36m116[0m  [36m             {:__html (md->html docs)}}]])])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:163  column:22  ----[0m
+
+  [1mNo such namespace: qs, could not locate qs.cljs, qs.cljc, or JavaScript source providing ""[0m
+
+  [36m159[0m  [36m          ;; (.log js/console (session/get :questions))[0m
+  [36m160[0m  [36m          (print-responses responses id checked)[0m
+  [36m161[0m  [36m          ])[0m
+  [36m162[0m  [36m       [:button.btn.btn-primary[0m
+  [33m163[0m  [1m        {:on-click #(qs/send-responses checked errors)} "send responses"]])))[0m
+  [0m   [0m  [33m                     ^--- No such namespace: qs, could not locate qs.cljs, qs.cljc, or JavaScript source providing ""[0m
+  [36m164[0m  [36m[0m
+  [36m165[0m  [36m[0m
+  [36m166[0m  [36m[0m
+  [36m167[0m  [36m(defn modal [][0m
+  [36m168[0m  [36m  (when-let [session-modal (session/get :modal)][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:163  column:22  ----[0m
+
+  [1mUse of undeclared Var qs/send-responses[0m
+
+  [36m159[0m  [36m          ;; (.log js/console (session/get :questions))[0m
+  [36m160[0m  [36m          (print-responses responses id checked)[0m
+  [36m161[0m  [36m          ])[0m
+  [36m162[0m  [36m       [:button.btn.btn-primary[0m
+  [33m163[0m  [1m        {:on-click #(qs/send-responses checked errors)} "send responses"]])))[0m
+  [0m   [0m  [33m                     ^--- Use of undeclared Var qs/send-responses[0m
+  [36m164[0m  [36m[0m
+  [36m165[0m  [36m[0m
+  [36m166[0m  [36m[0m
+  [36m167[0m  [36m(defn modal [][0m
+  [36m168[0m  [36m  (when-let [session-modal (session/get :modal)][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.883 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:22  column:21  ----[0m
+
+  [1mNo such namespace: l, could not locate l.cljs, l.cljc, or JavaScript source providing ""[0m
+
+  [36m18[0m  [36m                    "/logout"[0m
+  [36m19[0m  [36m                    {:handler (fn [] (session/remove! :identity))})}[0m
+  [36m20[0m  [36m       [:i.fa.fa-user] " " id " | sign out"]]][0m
+  [36m21[0m  [36m    [:ul.nav.navbar-nav.pull-xs-right[0m
+  [33m22[0m  [1m     [:li.nav-item [l/login-button]][0m
+  [0m  [0m  [33m                    ^--- No such namespace: l, could not locate l.cljs, l.cljc, or JavaScript source providing ""[0m
+  [36m23[0m  [36m     [:li.nav-item [reg/registration-button]]]))[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m;; (defn nav-link [uri title page collapsed?][0m
+  [36m26[0m  [36m;;   [:li.nav-item[0m
+  [36m27[0m  [36m;;    {:class (when (= page (session/get :page)) "active")}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:22  column:21  ----[0m
+
+  [1mUse of undeclared Var l/login-button[0m
+
+  [36m18[0m  [36m                    "/logout"[0m
+  [36m19[0m  [36m                    {:handler (fn [] (session/remove! :identity))})}[0m
+  [36m20[0m  [36m       [:i.fa.fa-user] " " id " | sign out"]]][0m
+  [36m21[0m  [36m    [:ul.nav.navbar-nav.pull-xs-right[0m
+  [33m22[0m  [1m     [:li.nav-item [l/login-button]][0m
+  [0m  [0m  [33m                    ^--- Use of undeclared Var l/login-button[0m
+  [36m23[0m  [36m     [:li.nav-item [reg/registration-button]]]))[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m;; (defn nav-link [uri title page collapsed?][0m
+  [36m26[0m  [36m;;   [:li.nav-item[0m
+  [36m27[0m  [36m;;    {:class (when (= page (session/get :page)) "active")}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:23  column:21  ----[0m
+
+  [1mNo such namespace: reg, could not locate reg.cljs, reg.cljc, or JavaScript source providing ""[0m
+
+  [36m19[0m  [36m                    {:handler (fn [] (session/remove! :identity))})}[0m
+  [36m20[0m  [36m       [:i.fa.fa-user] " " id " | sign out"]]][0m
+  [36m21[0m  [36m    [:ul.nav.navbar-nav.pull-xs-right[0m
+  [36m22[0m  [36m     [:li.nav-item [l/login-button]][0m
+  [33m23[0m  [1m     [:li.nav-item [reg/registration-button]]]))[0m
+  [0m  [0m  [33m                    ^--- No such namespace: reg, could not locate reg.cljs, reg.cljc, or JavaScript source providing ""[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m;; (defn nav-link [uri title page collapsed?][0m
+  [36m26[0m  [36m;;   [:li.nav-item[0m
+  [36m27[0m  [36m;;    {:class (when (= page (session/get :page)) "active")}[0m
+  [36m28[0m  [36m;;    [:a.nav-link[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:23  column:21  ----[0m
+
+  [1mUse of undeclared Var reg/registration-button[0m
+
+  [36m19[0m  [36m                    {:handler (fn [] (session/remove! :identity))})}[0m
+  [36m20[0m  [36m       [:i.fa.fa-user] " " id " | sign out"]]][0m
+  [36m21[0m  [36m    [:ul.nav.navbar-nav.pull-xs-right[0m
+  [36m22[0m  [36m     [:li.nav-item [l/login-button]][0m
+  [33m23[0m  [1m     [:li.nav-item [reg/registration-button]]]))[0m
+  [0m  [0m  [33m                    ^--- Use of undeclared Var reg/registration-button[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m;; (defn nav-link [uri title page collapsed?][0m
+  [36m26[0m  [36m;;   [:li.nav-item[0m
+  [36m27[0m  [36m;;    {:class (when (= page (session/get :page)) "active")}[0m
+  [36m28[0m  [36m;;    [:a.nav-link[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:76  column:5  ----[0m
+
+  [1mNo such namespace: qs, could not locate qs.cljs, qs.cljc, or JavaScript source providing ""[0m
+
+  [36m72[0m  [36m     "this is the story of htembh... work in progress"]]])[0m
+  [36m73[0m  [36m[0m
+  [36m74[0m  [36m(defn htembh-page [][0m
+  [36m75[0m  [36m  [:div.container[0m
+  [33m76[0m  [1m   (qs/get-questions-btn)])[0m
+  [0m  [0m  [33m    ^--- No such namespace: qs, could not locate qs.cljs, qs.cljc, or JavaScript source providing ""[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn about-page [][0m
+  [36m79[0m  [36m  [:div.container[0m
+  [36m80[0m  [36m   [:div.row[0m
+  [36m81[0m  [36m    [:div.col-md-12[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:76  column:5  ----[0m
+
+  [1mUse of undeclared Var qs/get-questions-btn[0m
+
+  [36m72[0m  [36m     "this is the story of htembh... work in progress"]]])[0m
+  [36m73[0m  [36m[0m
+  [36m74[0m  [36m(defn htembh-page [][0m
+  [36m75[0m  [36m  [:div.container[0m
+  [33m76[0m  [1m   (qs/get-questions-btn)])[0m
+  [0m  [0m  [33m    ^--- Use of undeclared Var qs/get-questions-btn[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn about-page [][0m
+  [36m79[0m  [36m  [:div.container[0m
+  [36m80[0m  [36m   [:div.row[0m
+  [36m81[0m  [36m    [:div.col-md-12[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:105  column:1  ----[0m
+
+  [1mabout-page at line 78 is being replaced[0m
+
+  [36m101[0m  [36m   [:div.row[0m
+  [36m102[0m  [36m    [:a {:href "/#/about"} "About this site"]]])[0m
+  [36m103[0m  [36m[0m
+  [36m104[0m  [36m[0m
+  [33m105[0m  [1m(defn about-page [][0m
+  [0m   [0m  [33m^--- about-page at line 78 is being replaced[0m
+  [36m106[0m  [36m  [:div.container[0m
+  [36m107[0m  [36m   [:div.row[0m
+  [36m108[0m  [36m    [:div.col-md-12[0m
+  [36m109[0m  [36m     [:img {:src (str js/context "/img/warning_clojure.png")}]]]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:111  column:1  ----[0m
+
+  [1mhome-page at line 93 is being replaced[0m
+
+  [36m107[0m  [36m   [:div.row[0m
+  [36m108[0m  [36m    [:div.col-md-12[0m
+  [36m109[0m  [36m     [:img {:src (str js/context "/img/warning_clojure.png")}]]]])[0m
+  [36m110[0m  [36m[0m
+  [33m111[0m  [1m(defn home-page [][0m
+  [0m   [0m  [33m^--- home-page at line 93 is being replaced[0m
+  [36m112[0m  [36m  [:div.container[0m
+  [36m113[0m  [36m   (when-let [docs (session/get :docs)][0m
+  [36m114[0m  [36m     [:div.row>div.col-sm-12[0m
+  [36m115[0m  [36m      [:div {:dangerouslySetInnerHTML[0m
+  [36m116[0m  [36m             {:__html (md->html docs)}}]])])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:163  column:22  ----[0m
+
+  [1mNo such namespace: qs, could not locate qs.cljs, qs.cljc, or JavaScript source providing ""[0m
+
+  [36m159[0m  [36m          ;; (.log js/console (session/get :questions))[0m
+  [36m160[0m  [36m          (print-responses responses id checked)[0m
+  [36m161[0m  [36m          ])[0m
+  [36m162[0m  [36m       [:button.btn.btn-primary[0m
+  [33m163[0m  [1m        {:on-click #(qs/send-responses checked errors)} "send responses"]])))[0m
+  [0m   [0m  [33m                     ^--- No such namespace: qs, could not locate qs.cljs, qs.cljc, or JavaScript source providing ""[0m
+  [36m164[0m  [36m[0m
+  [36m165[0m  [36m[0m
+  [36m166[0m  [36m[0m
+  [36m167[0m  [36m(defn modal [][0m
+  [36m168[0m  [36m  (when-let [session-modal (session/get :modal)][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:163  column:22  ----[0m
+
+  [1mUse of undeclared Var qs/send-responses[0m
+
+  [36m159[0m  [36m          ;; (.log js/console (session/get :questions))[0m
+  [36m160[0m  [36m          (print-responses responses id checked)[0m
+  [36m161[0m  [36m          ])[0m
+  [36m162[0m  [36m       [:button.btn.btn-primary[0m
+  [33m163[0m  [1m        {:on-click #(qs/send-responses checked errors)} "send responses"]])))[0m
+  [0m   [0m  [33m                     ^--- Use of undeclared Var qs/send-responses[0m
+  [36m164[0m  [36m[0m
+  [36m165[0m  [36m[0m
+  [36m166[0m  [36m[0m
+  [36m167[0m  [36m(defn modal [][0m
+  [36m168[0m  [36m  (when-let [session-modal (session/get :modal)][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.025 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:22  column:21  ----[0m
+
+  [1mNo such namespace: l, could not locate l.cljs, l.cljc, or JavaScript source providing ""[0m
+
+  [36m18[0m  [36m                    "/logout"[0m
+  [36m19[0m  [36m                    {:handler (fn [] (session/remove! :identity))})}[0m
+  [36m20[0m  [36m       [:i.fa.fa-user] " " id " | sign out"]]][0m
+  [36m21[0m  [36m    [:ul.nav.navbar-nav.pull-xs-right[0m
+  [33m22[0m  [1m     [:li.nav-item [l/login-button]][0m
+  [0m  [0m  [33m                    ^--- No such namespace: l, could not locate l.cljs, l.cljc, or JavaScript source providing ""[0m
+  [36m23[0m  [36m     [:li.nav-item [reg/registration-button]]]))[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m;; (defn nav-link [uri title page collapsed?][0m
+  [36m26[0m  [36m;;   [:li.nav-item[0m
+  [36m27[0m  [36m;;    {:class (when (= page (session/get :page)) "active")}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:22  column:21  ----[0m
+
+  [1mUse of undeclared Var l/login-button[0m
+
+  [36m18[0m  [36m                    "/logout"[0m
+  [36m19[0m  [36m                    {:handler (fn [] (session/remove! :identity))})}[0m
+  [36m20[0m  [36m       [:i.fa.fa-user] " " id " | sign out"]]][0m
+  [36m21[0m  [36m    [:ul.nav.navbar-nav.pull-xs-right[0m
+  [33m22[0m  [1m     [:li.nav-item [l/login-button]][0m
+  [0m  [0m  [33m                    ^--- Use of undeclared Var l/login-button[0m
+  [36m23[0m  [36m     [:li.nav-item [reg/registration-button]]]))[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m;; (defn nav-link [uri title page collapsed?][0m
+  [36m26[0m  [36m;;   [:li.nav-item[0m
+  [36m27[0m  [36m;;    {:class (when (= page (session/get :page)) "active")}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:23  column:21  ----[0m
+
+  [1mNo such namespace: reg, could not locate reg.cljs, reg.cljc, or JavaScript source providing ""[0m
+
+  [36m19[0m  [36m                    {:handler (fn [] (session/remove! :identity))})}[0m
+  [36m20[0m  [36m       [:i.fa.fa-user] " " id " | sign out"]]][0m
+  [36m21[0m  [36m    [:ul.nav.navbar-nav.pull-xs-right[0m
+  [36m22[0m  [36m     [:li.nav-item [l/login-button]][0m
+  [33m23[0m  [1m     [:li.nav-item [reg/registration-button]]]))[0m
+  [0m  [0m  [33m                    ^--- No such namespace: reg, could not locate reg.cljs, reg.cljc, or JavaScript source providing ""[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m;; (defn nav-link [uri title page collapsed?][0m
+  [36m26[0m  [36m;;   [:li.nav-item[0m
+  [36m27[0m  [36m;;    {:class (when (= page (session/get :page)) "active")}[0m
+  [36m28[0m  [36m;;    [:a.nav-link[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:23  column:21  ----[0m
+
+  [1mUse of undeclared Var reg/registration-button[0m
+
+  [36m19[0m  [36m                    {:handler (fn [] (session/remove! :identity))})}[0m
+  [36m20[0m  [36m       [:i.fa.fa-user] " " id " | sign out"]]][0m
+  [36m21[0m  [36m    [:ul.nav.navbar-nav.pull-xs-right[0m
+  [36m22[0m  [36m     [:li.nav-item [l/login-button]][0m
+  [33m23[0m  [1m     [:li.nav-item [reg/registration-button]]]))[0m
+  [0m  [0m  [33m                    ^--- Use of undeclared Var reg/registration-button[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m;; (defn nav-link [uri title page collapsed?][0m
+  [36m26[0m  [36m;;   [:li.nav-item[0m
+  [36m27[0m  [36m;;    {:class (when (= page (session/get :page)) "active")}[0m
+  [36m28[0m  [36m;;    [:a.nav-link[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:76  column:5  ----[0m
+
+  [1mNo such namespace: qs, could not locate qs.cljs, qs.cljc, or JavaScript source providing ""[0m
+
+  [36m72[0m  [36m     "this is the story of htembh... work in progress"]]])[0m
+  [36m73[0m  [36m[0m
+  [36m74[0m  [36m(defn htembh-page [][0m
+  [36m75[0m  [36m  [:div.container[0m
+  [33m76[0m  [1m   (qs/get-questions-btn)])[0m
+  [0m  [0m  [33m    ^--- No such namespace: qs, could not locate qs.cljs, qs.cljc, or JavaScript source providing ""[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn about-page [][0m
+  [36m79[0m  [36m  [:div.container[0m
+  [36m80[0m  [36m   [:div.row[0m
+  [36m81[0m  [36m    [:div.col-md-12[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:76  column:5  ----[0m
+
+  [1mUse of undeclared Var qs/get-questions-btn[0m
+
+  [36m72[0m  [36m     "this is the story of htembh... work in progress"]]])[0m
+  [36m73[0m  [36m[0m
+  [36m74[0m  [36m(defn htembh-page [][0m
+  [36m75[0m  [36m  [:div.container[0m
+  [33m76[0m  [1m   (qs/get-questions-btn)])[0m
+  [0m  [0m  [33m    ^--- Use of undeclared Var qs/get-questions-btn[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn about-page [][0m
+  [36m79[0m  [36m  [:div.container[0m
+  [36m80[0m  [36m   [:div.row[0m
+  [36m81[0m  [36m    [:div.col-md-12[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:105  column:1  ----[0m
+
+  [1mabout-page at line 78 is being replaced[0m
+
+  [36m101[0m  [36m   [:div.row[0m
+  [36m102[0m  [36m    [:a {:href "/#/about"} "About this site"]]])[0m
+  [36m103[0m  [36m[0m
+  [36m104[0m  [36m[0m
+  [33m105[0m  [1m(defn about-page [][0m
+  [0m   [0m  [33m^--- about-page at line 78 is being replaced[0m
+  [36m106[0m  [36m  [:div.container[0m
+  [36m107[0m  [36m   [:div.row[0m
+  [36m108[0m  [36m    [:div.col-md-12[0m
+  [36m109[0m  [36m     [:img {:src (str js/context "/img/warning_clojure.png")}]]]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:111  column:1  ----[0m
+
+  [1mhome-page at line 93 is being replaced[0m
+
+  [36m107[0m  [36m   [:div.row[0m
+  [36m108[0m  [36m    [:div.col-md-12[0m
+  [36m109[0m  [36m     [:img {:src (str js/context "/img/warning_clojure.png")}]]]])[0m
+  [36m110[0m  [36m[0m
+  [33m111[0m  [1m(defn home-page [][0m
+  [0m   [0m  [33m^--- home-page at line 93 is being replaced[0m
+  [36m112[0m  [36m  [:div.container[0m
+  [36m113[0m  [36m   (when-let [docs (session/get :docs)][0m
+  [36m114[0m  [36m     [:div.row>div.col-sm-12[0m
+  [36m115[0m  [36m      [:div {:dangerouslySetInnerHTML[0m
+  [36m116[0m  [36m             {:__html (md->html docs)}}]])])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:163  column:22  ----[0m
+
+  [1mNo such namespace: qs, could not locate qs.cljs, qs.cljc, or JavaScript source providing ""[0m
+
+  [36m159[0m  [36m          ;; (.log js/console (session/get :questions))[0m
+  [36m160[0m  [36m          (print-responses responses id checked)[0m
+  [36m161[0m  [36m          ])[0m
+  [36m162[0m  [36m       [:button.btn.btn-primary[0m
+  [33m163[0m  [1m        {:on-click #(qs/send-responses checked errors)} "send responses"]])))[0m
+  [0m   [0m  [33m                     ^--- No such namespace: qs, could not locate qs.cljs, qs.cljc, or JavaScript source providing ""[0m
+  [36m164[0m  [36m[0m
+  [36m165[0m  [36m[0m
+  [36m166[0m  [36m[0m
+  [36m167[0m  [36m(defn modal [][0m
+  [36m168[0m  [36m  (when-let [session-modal (session/get :modal)][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:163  column:22  ----[0m
+
+  [1mUse of undeclared Var qs/send-responses[0m
+
+  [36m159[0m  [36m          ;; (.log js/console (session/get :questions))[0m
+  [36m160[0m  [36m          (print-responses responses id checked)[0m
+  [36m161[0m  [36m          ])[0m
+  [36m162[0m  [36m       [:button.btn.btn-primary[0m
+  [33m163[0m  [1m        {:on-click #(qs/send-responses checked errors)} "send responses"]])))[0m
+  [0m   [0m  [33m                     ^--- Use of undeclared Var qs/send-responses[0m
+  [36m164[0m  [36m[0m
+  [36m165[0m  [36m[0m
+  [36m166[0m  [36m[0m
+  [36m167[0m  [36m(defn modal [][0m
+  [36m168[0m  [36m  (when-let [session-modal (session/get :modal)][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.819 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:108  column:1  ----[0m
+
+  [1mabout-page at line 81 is being replaced[0m
+
+  [36m104[0m  [36m   [:div.row[0m
+  [36m105[0m  [36m    [:a {:href "/#/about"} "About this site"]]])[0m
+  [36m106[0m  [36m[0m
+  [36m107[0m  [36m[0m
+  [33m108[0m  [1m(defn about-page [][0m
+  [0m   [0m  [33m^--- about-page at line 81 is being replaced[0m
+  [36m109[0m  [36m  [:div.container[0m
+  [36m110[0m  [36m   [:div.row[0m
+  [36m111[0m  [36m    [:div.col-md-12[0m
+  [36m112[0m  [36m     [:img {:src (str js/context "/img/warning_clojure.png")}]]]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:114  column:1  ----[0m
+
+  [1mhome-page at line 96 is being replaced[0m
+
+  [36m110[0m  [36m   [:div.row[0m
+  [36m111[0m  [36m    [:div.col-md-12[0m
+  [36m112[0m  [36m     [:img {:src (str js/context "/img/warning_clojure.png")}]]]])[0m
+  [36m113[0m  [36m[0m
+  [33m114[0m  [1m(defn home-page [][0m
+  [0m   [0m  [33m^--- home-page at line 96 is being replaced[0m
+  [36m115[0m  [36m  [:div.container[0m
+  [36m116[0m  [36m   (when-let [docs (session/get :docs)][0m
+  [36m117[0m  [36m     [:div.row>div.col-sm-12[0m
+  [36m118[0m  [36m      [:div {:dangerouslySetInnerHTML[0m
+  [36m119[0m  [36m             {:__html (md->html docs)}}]])])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 5.184 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:114  column:1  ----[0m
+
+  [1mhome-page at line 96 is being replaced[0m
+
+  [36m110[0m  [36m;;    [:div.row[0m
+  [36m111[0m  [36m;;     [:div.col-md-12[0m
+  [36m112[0m  [36m;;      [:img {:src (str js/context "/img/warning_clojure.png")}]]]])[0m
+  [36m113[0m  [36m[0m
+  [33m114[0m  [1m(defn home-page [][0m
+  [0m   [0m  [33m^--- home-page at line 96 is being replaced[0m
+  [36m115[0m  [36m  [:div.container[0m
+  [36m116[0m  [36m   (when-let [docs (session/get :docs)][0m
+  [36m117[0m  [36m     [:div.row>div.col-sm-12[0m
+  [36m118[0m  [36m      [:div {:dangerouslySetInnerHTML[0m
+  [36m119[0m  [36m             {:__html (md->html docs)}}]])])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.49 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:113  column:1  ----[0m
+
+  [1mhome-page at line 95 is being replaced[0m
+
+  [36m109[0m  [36m;;    [:div.row[0m
+  [36m110[0m  [36m;;     [:div.col-md-12[0m
+  [36m111[0m  [36m;;      [:img {:src (str js/context "/img/warning_clojure.png")}]]]])[0m
+  [36m112[0m  [36m[0m
+  [33m113[0m  [1m(defn home-page [][0m
+  [0m   [0m  [33m^--- home-page at line 95 is being replaced[0m
+  [36m114[0m  [36m  [:div.container[0m
+  [36m115[0m  [36m   (when-let [docs (session/get :docs)][0m
+  [36m116[0m  [36m     [:div.row>div.col-sm-12[0m
+  [36m117[0m  [36m      [:div {:dangerouslySetInnerHTML[0m
+  [36m118[0m  [36m             {:__html (md->html docs)}}]])])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.415 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:113  column:1  ----[0m
+
+  [1mhome-page at line 95 is being replaced[0m
+
+  [36m109[0m  [36m;;    [:div.row[0m
+  [36m110[0m  [36m;;     [:div.col-md-12[0m
+  [36m111[0m  [36m;;      [:img {:src (str js/context "/img/warning_clojure.png")}]]]])[0m
+  [36m112[0m  [36m[0m
+  [33m113[0m  [1m(defn home-page [][0m
+  [0m   [0m  [33m^--- home-page at line 95 is being replaced[0m
+  [36m114[0m  [36m  [:div.container[0m
+  [36m115[0m  [36m   (when-let [docs (session/get :docs)][0m
+  [36m116[0m  [36m     [:div.row>div.col-sm-12[0m
+  [36m117[0m  [36m      [:div {:dangerouslySetInnerHTML[0m
+  [36m118[0m  [36m             {:__html (md->html docs)}}]])])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.124 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:113  column:1  ----[0m
+
+  [1mhome-page at line 95 is being replaced[0m
+
+  [36m109[0m  [36m;;    [:div.row[0m
+  [36m110[0m  [36m;;     [:div.col-md-12[0m
+  [36m111[0m  [36m;;      [:img {:src (str js/context "/img/warning_clojure.png")}]]]])[0m
+  [36m112[0m  [36m[0m
+  [33m113[0m  [1m(defn home-page [][0m
+  [0m   [0m  [33m^--- home-page at line 95 is being replaced[0m
+  [36m114[0m  [36m  [:div.container[0m
+  [36m115[0m  [36m   (when-let [docs (session/get :docs)][0m
+  [36m116[0m  [36m     [:div.row>div.col-sm-12[0m
+  [36m117[0m  [36m      [:div {:dangerouslySetInnerHTML[0m
+  [36m118[0m  [36m             {:__html (md->html docs)}}]])])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.12 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.829 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.623 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.763 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.769 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/login.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.755 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.802 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/registration.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.7 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/registration.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.718 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/ajax.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.668 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/ajax.js
