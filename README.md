@@ -11,9 +11,9 @@ MySQL with "htembh_dev" database created
 [1]: https://github.com/technomancy/leiningen
 
 
-##Breaking changed
+## Breaking changed
 
-htembh 2.0
+htembh 0.2.0
 
 Project is updated to newest version of luminus
 follow instructions below to be able to start project properly
@@ -28,7 +28,7 @@ Add in root folder (luminus template):
     and in it:
 
     {:profiles/dev  {:env {:database-url "mysql://localhost:3306/htembh_dev?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&user=USERNAME&password=PASSWORD"}}
- :profiles/test {:env {:database-url "mysql://localhost:3306/htembh_test?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&user=USERNAME&password=PASSWORD"}}}
+     :profiles/test {:env {:database-url "mysql://localhost:3306/htembh_test?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&user=USERNAME&password=PASSWORD"}}}
 
     
 
