@@ -18,13 +18,13 @@ WHERE email = :email
 
 -- :name get-questions :? :*
 -- :doc retrieve a question given topic id
-select * from questions
+select id,text from questions
 where topic = :topic order by id asc
 
 
 -- :name get-answers :? :*
 -- :doc retrieve an answer give question id
-select * from responses
+select id,text from responses
 where id in (select id from qu_re_connection
       	     where question = :question)
 	     order by id asc

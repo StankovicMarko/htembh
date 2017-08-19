@@ -872,3 +872,347 @@ notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/ajax
 [0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.668 seconds.[0m
 notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/ajax.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.691 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.218 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:170  column:41  ----[0m
+
+  [1mUse of undeclared Var htembh.core/error[0m
+
+  [36m166[0m  [36m   ;; [:p1 (str id)][0m
+  [36m167[0m  [36m   ;; (.log js/console (session/get :questions))[0m
+  [36m168[0m  [36m   (print-responses responses id checked)[0m
+  [36m169[0m  [36m   ])[0m
+  [33m170[0m  [1m(when-let [error (first (:email @error))][0m
+  [0m   [0m  [33m                                 ^--- Use of undeclared Var htembh.core/error[0m
+  [36m171[0m  [36m  [:div.alert.alert-danger error])[0m
+  [36m172[0m  [36m[:button.btn.btn-primary[0m
+  [36m173[0m  [36m {:on-click #(validate-num-responses checked errors (count questions))}[0m
+  [36m174[0m  [36m "send responses"]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.093 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:170  column:41  ----[0m
+
+  [1mUse of undeclared Var htembh.core/error[0m
+
+  [36m166[0m  [36m   ;; [:p1 (str id)][0m
+  [36m167[0m  [36m   ;; (.log js/console (session/get :questions))[0m
+  [36m168[0m  [36m   (print-responses responses id checked)[0m
+  [36m169[0m  [36m   ])[0m
+  [33m170[0m  [1m(when-let [error (first (:email @error))][0m
+  [0m   [0m  [33m                                 ^--- Use of undeclared Var htembh.core/error[0m
+  [36m171[0m  [36m  [:div.alert.alert-danger error])[0m
+  [36m172[0m  [36m[:button.btn.btn-primary[0m
+  [36m173[0m  [36m {:on-click #(validate-num-responses checked errors (count questions))}[0m
+  [36m174[0m  [36m "send responses"]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.939 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:170  column:41  ----[0m
+
+  [1mUse of undeclared Var htembh.core/error[0m
+
+  [36m166[0m  [36m   ;; [:p1 (str id)][0m
+  [36m167[0m  [36m   ;; (.log js/console (session/get :questions))[0m
+  [36m168[0m  [36m   (print-responses responses id checked)[0m
+  [36m169[0m  [36m   ])[0m
+  [33m170[0m  [1m(when-let [error (first (:email @error))][0m
+  [0m   [0m  [33m                                 ^--- Use of undeclared Var htembh.core/error[0m
+  [36m171[0m  [36m  [:div.alert.alert-danger error])[0m
+  [36m172[0m  [36m[:button.btn.btn-primary[0m
+  [36m173[0m  [36m {:on-click #(validate-num-responses checked errors (count questions))}[0m
+  [36m174[0m  [36m "send responses"]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.028 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:170  column:26  ----[0m
+
+  [1mUse of undeclared Var htembh.core/error[0m
+
+  [36m166[0m  [36m   ;; [:p1 (str id)][0m
+  [36m167[0m  [36m   ;; (.log js/console (session/get :questions))[0m
+  [36m168[0m  [36m   (print-responses responses id checked)[0m
+  [36m169[0m  [36m   ])[0m
+  [33m170[0m  [1m(when-let [error @error][0m
+  [0m   [0m  [33m                  ^--- Use of undeclared Var htembh.core/error[0m
+  [36m171[0m  [36m  [:div.alert.alert-danger error])[0m
+  [36m172[0m  [36m[:button.btn.btn-primary[0m
+  [36m173[0m  [36m {:on-click #(validate-num-responses checked errors (count questions))}[0m
+  [36m174[0m  [36m "send responses"]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.893 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:170  column:26  ----[0m
+
+  [1mUse of undeclared Var htembh.core/error[0m
+
+  [36m166[0m  [36m   ;; [:p1 (str id)][0m
+  [36m167[0m  [36m   ;; (.log js/console (session/get :questions))[0m
+  [36m168[0m  [36m   (print-responses responses id checked)[0m
+  [36m169[0m  [36m   ])[0m
+  [33m170[0m  [1m(when-let [error @error][0m
+  [0m   [0m  [33m                  ^--- Use of undeclared Var htembh.core/error[0m
+  [36m171[0m  [36m  [:div.alert.alert-danger error])[0m
+  [36m172[0m  [36m[:button.btn.btn-primary[0m
+  [36m173[0m  [36m {:on-click #(validate-num-responses checked errors (count questions))}[0m
+  [36m174[0m  [36m "send responses"]])))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.109 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.906 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.922 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.736 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.655 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.649 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/questions.cljs   line:81  column:8  ----[0m
+
+  [1mNo such namespace: qs, could not locate qs.cljs, qs.cljc, or JavaScript source providing ""[0m
+
+  [36m77[0m  [36m(defn validate-num-responses [checked errors min-num][0m
+  [36m78[0m  [36m  (let [clicked (count (:responses @checked))][0m
+  [36m79[0m  [36m    (if (not= clicked min-num)[0m
+  [36m80[0m  [36m      (reset! errors "All questions must be answered")[0m
+  [33m81[0m  [1m      (qs/send-responses checked errors))))[0m
+  [0m  [0m  [33m       ^--- No such namespace: qs, could not locate qs.cljs, qs.cljc, or JavaScript source providing ""[0m
+  [36m82[0m  [36m[0m
+  [36m83[0m  [36m(defn questions-form [questions][0m
+  [36m84[0m  [36m  (let [checked (r/atom {:responses [][0m
+  [36m85[0m  [36m                         :user (session/get :identity)})[0m
+  [36m86[0m  [36m        errors (r/atom nil)][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/questions.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/questions.cljs   line:81  column:8  ----[0m
+
+  [1mUse of undeclared Var qs/send-responses[0m
+
+  [36m77[0m  [36m(defn validate-num-responses [checked errors min-num][0m
+  [36m78[0m  [36m  (let [clicked (count (:responses @checked))][0m
+  [36m79[0m  [36m    (if (not= clicked min-num)[0m
+  [36m80[0m  [36m      (reset! errors "All questions must be answered")[0m
+  [33m81[0m  [1m      (qs/send-responses checked errors))))[0m
+  [0m  [0m  [33m       ^--- Use of undeclared Var qs/send-responses[0m
+  [36m82[0m  [36m[0m
+  [36m83[0m  [36m(defn questions-form [questions][0m
+  [36m84[0m  [36m  (let [checked (r/atom {:responses [][0m
+  [36m85[0m  [36m                         :user (session/get :identity)})[0m
+  [36m86[0m  [36m        errors (r/atom nil)][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/questions.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/questions.cljs   line:84  column:18  ----[0m
+
+  [1mNo such namespace: r, could not locate r.cljs, r.cljc, or JavaScript source providing ""[0m
+
+  [36m80[0m  [36m      (reset! errors "All questions must be answered")[0m
+  [36m81[0m  [36m      (qs/send-responses checked errors))))[0m
+  [36m82[0m  [36m[0m
+  [36m83[0m  [36m(defn questions-form [questions][0m
+  [33m84[0m  [1m  (let [checked (r/atom {:responses [][0m
+  [0m  [0m  [33m                 ^--- No such namespace: r, could not locate r.cljs, r.cljc, or JavaScript source providing ""[0m
+  [36m85[0m  [36m                         :user (session/get :identity)})[0m
+  [36m86[0m  [36m        errors (r/atom nil)][0m
+  [36m87[0m  [36m    (fn [][0m
+  [36m88[0m  [36m      [:div.container[0m
+  [36m89[0m  [36m       ;; [:form][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/questions.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/questions.cljs   line:84  column:18  ----[0m
+
+  [1mUse of undeclared Var r/atom[0m
+
+  [36m80[0m  [36m      (reset! errors "All questions must be answered")[0m
+  [36m81[0m  [36m      (qs/send-responses checked errors))))[0m
+  [36m82[0m  [36m[0m
+  [36m83[0m  [36m(defn questions-form [questions][0m
+  [33m84[0m  [1m  (let [checked (r/atom {:responses [][0m
+  [0m  [0m  [33m                 ^--- Use of undeclared Var r/atom[0m
+  [36m85[0m  [36m                         :user (session/get :identity)})[0m
+  [36m86[0m  [36m        errors (r/atom nil)][0m
+  [36m87[0m  [36m    (fn [][0m
+  [36m88[0m  [36m      [:div.container[0m
+  [36m89[0m  [36m       ;; [:form][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/questions.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/questions.cljs   line:86  column:17  ----[0m
+
+  [1mNo such namespace: r, could not locate r.cljs, r.cljc, or JavaScript source providing ""[0m
+
+  [36m83[0m  [36m(defn questions-form [questions][0m
+  [36m84[0m  [36m  (let [checked (r/atom {:responses [][0m
+  [36m85[0m  [36m                         :user (session/get :identity)})[0m
+  [33m86[0m  [1m        errors (r/atom nil)][0m
+  [0m  [0m  [33m                ^--- No such namespace: r, could not locate r.cljs, r.cljc, or JavaScript source providing ""[0m
+  [36m87[0m  [36m    (fn [][0m
+  [36m88[0m  [36m      [:div.container[0m
+  [36m89[0m  [36m       ;; [:form][0m
+  [36m90[0m  [36m       (for [{:keys [id text responses]}  questions][0m
+  [36m91[0m  [36m         ^{:key id}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/questions.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/questions.cljs   line:86  column:17  ----[0m
+
+  [1mUse of undeclared Var r/atom[0m
+
+  [36m83[0m  [36m(defn questions-form [questions][0m
+  [36m84[0m  [36m  (let [checked (r/atom {:responses [][0m
+  [36m85[0m  [36m                         :user (session/get :identity)})[0m
+  [33m86[0m  [1m        errors (r/atom nil)][0m
+  [0m  [0m  [33m                ^--- Use of undeclared Var r/atom[0m
+  [36m87[0m  [36m    (fn [][0m
+  [36m88[0m  [36m      [:div.container[0m
+  [36m89[0m  [36m       ;; [:form][0m
+  [36m90[0m  [36m       (for [{:keys [id text responses]}  questions][0m
+  [36m91[0m  [36m         ^{:key id}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/questions.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.981 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.624 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.633 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/questions.cljs   line:81  column:8  ----[0m
+
+  [1mNo such namespace: qs, could not locate qs.cljs, qs.cljc, or JavaScript source providing ""[0m
+
+  [36m77[0m  [36m(defn validate-num-responses [checked errors min-num][0m
+  [36m78[0m  [36m  (let [clicked (count (:responses @checked))][0m
+  [36m79[0m  [36m    (if (not= clicked min-num)[0m
+  [36m80[0m  [36m      (reset! errors "All questions must be answered")[0m
+  [33m81[0m  [1m      (qs/send-responses checked errors))))[0m
+  [0m  [0m  [33m       ^--- No such namespace: qs, could not locate qs.cljs, qs.cljc, or JavaScript source providing ""[0m
+  [36m82[0m  [36m[0m
+  [36m83[0m  [36m(defn questions-form [questions][0m
+  [36m84[0m  [36m  (let [checked (atom {:responses [][0m
+  [36m85[0m  [36m                         :user (session/get :identity)})[0m
+  [36m86[0m  [36m        errors (atom nil)][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/questions.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/questions.cljs   line:81  column:8  ----[0m
+
+  [1mUse of undeclared Var qs/send-responses[0m
+
+  [36m77[0m  [36m(defn validate-num-responses [checked errors min-num][0m
+  [36m78[0m  [36m  (let [clicked (count (:responses @checked))][0m
+  [36m79[0m  [36m    (if (not= clicked min-num)[0m
+  [36m80[0m  [36m      (reset! errors "All questions must be answered")[0m
+  [33m81[0m  [1m      (qs/send-responses checked errors))))[0m
+  [0m  [0m  [33m       ^--- Use of undeclared Var qs/send-responses[0m
+  [36m82[0m  [36m[0m
+  [36m83[0m  [36m(defn questions-form [questions][0m
+  [36m84[0m  [36m  (let [checked (atom {:responses [][0m
+  [36m85[0m  [36m                         :user (session/get :identity)})[0m
+  [36m86[0m  [36m        errors (atom nil)][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/questions.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.007 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/questions.cljs   line:98  column:8  ----[0m
+
+  [1mNo such namespace: qs, could not locate qs.cljs, qs.cljc, or JavaScript source providing ""[0m
+
+  [36m 94[0m  [36m(defn validate-num-responses [checked errors min-num][0m
+  [36m 95[0m  [36m  (let [clicked (count (:responses @checked))][0m
+  [36m 96[0m  [36m    (if (not= clicked min-num)[0m
+  [36m 97[0m  [36m      (reset! errors "All questions must be answered")[0m
+  [33m 98[0m  [1m      (qs/send-responses checked errors))))[0m
+  [0m   [0m  [33m       ^--- No such namespace: qs, could not locate qs.cljs, qs.cljc, or JavaScript source providing ""[0m
+  [36m 99[0m  [36m[0m
+  [36m100[0m  [36m(defn questions-form [questions][0m
+  [36m101[0m  [36m  (let [checked (atom {:responses [][0m
+  [36m102[0m  [36m                         :user (session/get :identity)})[0m
+  [36m103[0m  [36m        errors (atom nil)][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/questions.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/questions.cljs   line:98  column:8  ----[0m
+
+  [1mUse of undeclared Var qs/send-responses[0m
+
+  [36m 94[0m  [36m(defn validate-num-responses [checked errors min-num][0m
+  [36m 95[0m  [36m  (let [clicked (count (:responses @checked))][0m
+  [36m 96[0m  [36m    (if (not= clicked min-num)[0m
+  [36m 97[0m  [36m      (reset! errors "All questions must be answered")[0m
+  [33m 98[0m  [1m      (qs/send-responses checked errors))))[0m
+  [0m   [0m  [33m       ^--- Use of undeclared Var qs/send-responses[0m
+  [36m 99[0m  [36m[0m
+  [36m100[0m  [36m(defn questions-form [questions][0m
+  [36m101[0m  [36m  (let [checked (atom {:responses [][0m
+  [36m102[0m  [36m                         :user (session/get :identity)})[0m
+  [36m103[0m  [36m        errors (atom nil)][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/questions.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.832 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.62 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.88 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.666 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.726 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.704 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.726 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.776 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.695 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.611 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.835 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.684 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.637 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.603 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.602 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js

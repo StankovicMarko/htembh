@@ -125,47 +125,6 @@ Hope this web app makes your life more easier and maybe helps you
    })
 
 
-(defn swap-checked-val [checked val]
-  (swap! checked assoc :responses (conj (:responses @checked) val)))
-
-(defn print-responses [responses q-id checked]
-  (for [{:keys [id text points]} responses]
-    ^{:key id}
-    [:p [:input {:type :radio
-                 :name  q-id
-                 :value id
-                 :on-change #(swap-checked-val checked
-                                               (int (->  % .-target .-value)))
-                 ;; :on-change #(swap! checked conj (int (->  % .-target .-value)))
-                 ;; :required :true
-                 ;; :on-change #(do
-                 ;;               (swap! checked assoc "q-id" q-id)
-                 ;;               (swap! checked assoc "response" 
-                 ;;                      (-> % .-target .-value)))
-                 }]
-     (str text)]))
-
-
-(defn questions-form [questions]
-  (let [checked (r/atom {:responses []
-                         :user (session/get :identity)})
-        errors (r/atom nil)]
-    (fn []
-      [:div.container
-       ;; [:form]
-       (for [{:keys [id text responses]}  questions]
-         ^{:key id}
-         [:div.row
-          [:label [:strong text]]
-          ;; [:p1 (str id)]
-          ;; (.log js/console (session/get :questions))
-          (print-responses responses id checked)
-          ])
-       [:button.btn.btn-primary
-        {:on-click #(qs/send-responses checked errors)} "send responses"]])))
-
-
-
 (defn modal []
   (when-let [session-modal (session/get :modal)]
     [session-modal]))
@@ -173,9 +132,8 @@ Hope this web app makes your life more easier and maybe helps you
 (defn page []
   [:div
    [modal]
-   ;; (println (session/get :questions))
    (when-let [questions (session/get :questions)]
-     [questions-form  questions])
+     [qs/questions-form  questions])
    (if (not= (session/get :page) nil)
      [(pages (session/get :page))]
      [(pages :home)])])
