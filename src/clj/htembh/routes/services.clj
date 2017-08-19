@@ -101,11 +101,12 @@
     (GET "/questions/:topic" []
          :summary "get questions by topic id"
          :path-params [topic :- String]
-         (qs/get-q&r (read-string topic)))
+         (qs/get-questions&responses (read-string topic)))
   
-    (POST "/responses" req
+    (POST "/responses/:topic" [responses user topic]
           :summary "posting user responses"
           :body [rq s/Any]
+          ;; :path-params [topic :- Long]
           ;; :return Result
-          (qs/post-r req))
+          (qs/save-responses responses user topic))
 ))

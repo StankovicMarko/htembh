@@ -1216,3 +1216,67 @@ notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core
 [0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.602 seconds.[0m
 notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.38 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.649 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/questions.cljs   line:51  column:7  ----[0m
+
+  [1mWrong number of args (2) passed to htembh.components.questions/send-responses[0m
+
+  [36m47[0m  [36m(defn validate-num-responses [checked errors min-num][0m
+  [36m48[0m  [36m  (let [clicked (count (:responses @checked))][0m
+  [36m49[0m  [36m    (if (not= clicked min-num)[0m
+  [36m50[0m  [36m      (reset! errors "All questions must be answered")[0m
+  [33m51[0m  [1m      (send-responses checked errors))))[0m
+  [0m  [0m  [33m      ^--- Wrong number of args (2) passed to htembh.components.questions/send-responses[0m
+  [36m52[0m  [36m[0m
+  [36m53[0m  [36m(defn questions-form [questions][0m
+  [36m54[0m  [36m  (let [checked (atom {:responses [][0m
+  [36m55[0m  [36m                       :user (session/get :identity)})[0m
+  [36m56[0m  [36m        errors (atom nil)][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/questions.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.462 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/questions.cljs   line:52  column:7  ----[0m
+
+  [1mWrong number of args (2) passed to htembh.components.questions/send-responses[0m
+
+  [36m48[0m  [36m(defn validate-num-responses [checked errors min-num][0m
+  [36m49[0m  [36m  (let [clicked (count (:responses @checked))][0m
+  [36m50[0m  [36m    (if (not= clicked min-num)[0m
+  [36m51[0m  [36m      (reset! errors "All questions must be answered")[0m
+  [33m52[0m  [1m      (send-responses checked errors))))[0m
+  [0m  [0m  [33m      ^--- Wrong number of args (2) passed to htembh.components.questions/send-responses[0m
+  [36m53[0m  [36m[0m
+  [36m54[0m  [36m(defn questions-form [questions][0m
+  [36m55[0m  [36m  (let [checked (atom {:responses [][0m
+  [36m56[0m  [36m                       :user (session/get :identity)})[0m
+  [36m57[0m  [36m        errors (atom nil)][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/questions.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.698 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.58 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.565 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.629 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.726 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.623 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.614 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js

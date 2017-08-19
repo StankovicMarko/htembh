@@ -33,6 +33,18 @@ where id in (select id from qu_re_connection
 -- :doc get response for given id
 select * from responses where id = :id
 
+
+-- :name calculate-points :? :*
+-- :doc calc points from user responses
+select points from responses where id in (:v*:ids)
+
+-- :name create-user-response :! :n
+-- :doc creates user-response
+insert into user_responses
+(user, topic, points, date)
+values (:user, :topic, :points, :date)
+
+
 /*
 -- :name create-user! :! :n
 -- :doc creates a new user record

@@ -1,9 +1,7 @@
 (ns htembh.routes.questions
   (:require [htembh.db.core :as db]
             [ring.util.http-response :as response]
-            [cognitect.transit :as transit]
-            [cheshire.core :refer :all])
-  (:import [java.io ByteArrayInputStream ByteArrayOutputStream]))
+            [clj-time.local :as l]))
 
 
 ;; (def out (ByteArrayOutputStream. 4096))
@@ -43,7 +41,7 @@
 (defn get-response [id]
   (db/get-response {:id id}))
 
-(defn get-q&r [topic-id]
+(defn get-questions&responses [topic-id]
   (map #(assoc % :responses (get-answers (:id %))) (get-questions topic-id)))
 
 ;; (defn get-q&r [topic-id]
@@ -68,14 +66,40 @@
 ;;      (response/ok)
 ;;      ))
 
+(defn validate-num-responses [responses topic]
+  (let [sent (count responses)
+        min-num (count (db/get-questions {:topic topic}))]
+    (= sent min-num)))
 
-(defn post-r [req]
-  (let [body (slurp (:body req))]
-      ;; (t/write writer body)
-      ;; (println (t/read reader))
-    ;; (println (get-response (first (:responses (parse-string body true)))))
-    ;; (println (:body req))
-    (println (:params req))
-    ;; (println (decode-transit body))
-    ;; (println (parse-string body true))
-    ))
+
+(defn save-responses [responses user topic]
+  ;; (println responses user topic)
+  (if (validate-num-responses responses topic)
+    (let [points (int
+                  (reduce +
+                          (map #(:points %)
+                               (db/calculate-points {:ids responses}))))
+          date (l/local-now)]
+      (try
+        (db/create-user-response {:user user
+                                  :topic topic
+                                  :points points
+                                  :date date})
+        (-> {:result :ok}
+           (response/ok))
+        (catch Exception e
+          {:result :error
+           :message "Error saving response"})))
+    (response/bad-request))
+  )
+
+;; (defn post-r [req topic]
+;;   (let [body (slurp (:body req))]
+;;       ;; (t/write writer body)
+;;       ;; (println (t/read reader))
+;;     ;; (println (get-response (first (:responses (parse-string body true)))))
+;;     ;; (println (:body req))
+;;     (println (:params req))
+;;     ;; (println (decode-transit body))
+;;     ;; (println (parse-string body true))
+;;     ))

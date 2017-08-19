@@ -3,9 +3,10 @@
             [reagent.session :as session]
             [reagent.core :refer [atom]]))
 
+(def topic-num (atom 1))
 
 (defn get-questions [topic]
-  (ajax/GET "/api/questions/3"
+  (ajax/GET (str "/api/questions/" topic)
             {
              :handler #(session/put! :questions  %)
              :error-handler #(println %)
@@ -13,18 +14,24 @@
 
 (defn get-questions-btn []
   [:button.btn.btn-primary.btn-xl 
-   {:on-click #(get-questions 1)}
+   {:on-click #(get-questions @topic-num)}
    "get questions"])
 
-(defn send-responses [checked errors]
-  (ajax/POST "/api/responses"
+(defn reset-topic-num []
+  (if (>= @topic-num 6)
+    (reset! topic-num 1)
+    (swap! topic-num inc)))
+
+(defn send-responses [checked errors topic]
+  (ajax/POST (str "/api/responses/" topic)
              {
               :params @checked
               :handler #(do
                           (reset! checked
                                   {:responses []
                                    :user (session/get :identity)})
-                          (reset! errors nil))
+                          (reset! errors nil)
+                          (reset-topic-num))
               :error-handler #(println @checked)}))
 
 
@@ -46,13 +53,16 @@
 
 (defn validate-num-responses [checked errors min-num]
   (let [clicked (count (:responses @checked))]
-    (if (not= clicked min-num)
-      (reset! errors "All questions must be answered")
-      (send-responses checked errors))))
+    (do
+      (println min-num)
+      (println clicked)
+      (if (not= clicked min-num)
+        (reset! errors "All questions must be answered")
+        (send-responses checked errors @topic-num)))))
 
 (defn questions-form [questions]
   (let [checked (atom {:responses []
-                         :user (session/get :identity)})
+                       :user (session/get :identity)})
         errors (atom nil)]
     (fn []
       [:div.container

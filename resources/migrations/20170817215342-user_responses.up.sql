@@ -1,9 +1,8 @@
-CREATE TABLE IF NOT EXISTS user_response
+CREATE TABLE IF NOT EXISTS user_responses
 (id INT UNSIGNED NOT NULL AUTO_INCREMENT UNIQUE PRIMARY KEY,
-user int unsigned not null,
+user VARCHAR(60) NOT NULL,
 topic int unsigned not null,
 points int not null,
-date DATE not null,
-FOREIGN KEY (user) REFERENCES users(id),
+date timestamp not null,
 FOREIGN KEY (topic) REFERENCES topics(id));
 
