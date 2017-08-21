@@ -72,8 +72,9 @@
                          :name  q-id
                          :value id
                          :id id
-                         :on-change #(swap-checked-val checked
-                                                       (int (->  % .-target .-value)))
+                         :on-change #(do (swap-checked-val checked
+                                                           (int (->  % .-target .-value)))
+                                         (prn @checked))
                          }]
         [:label {:for id} (str text)]
         [:div.check
