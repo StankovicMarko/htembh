@@ -2063,3 +2063,91 @@ Notifying browser that CSS file changed: resources/public/css/screen.css
 Notifying browser that CSS file changed: resources/public/css/screen.css
 Notifying browser that CSS file changed: resources/public/css/screen.css
 Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.601 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/questions.cljs   line:75  column:42  ----[0m
+
+  [1mWrong number of args (3) passed to htembh.components.questions/swap-checked-val[0m
+
+  [36m71[0m  [36m[:div.li [:input {:type :radio[0m
+  [36m72[0m  [36m                  :name  q-id[0m
+  [36m73[0m  [36m                  :value id[0m
+  [36m74[0m  [36m                  :id id[0m
+  [33m75[0m  [1m                  :on-change #(do (swap-checked-val checked[0m
+  [0m  [0m  [33m                                  ^--- Wrong number of args (3) passed to htembh.components.questions/swap-checked-val[0m
+  [36m76[0m  [36m                                                    (int (->  % .-target .-value))[0m
+  [36m77[0m  [36m                                                    (int (-> % .-target .-name)))[0m
+  [36m78[0m  [36m                                  (prn @checked))[0m
+  [36m79[0m  [36m                  }][0m
+  [36m80[0m  [36m [:label {:for id} (str text)][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/questions.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/questions.cljs   line:75  column:42  ----[0m
+
+  [1mWrong number of args (3) passed to htembh.components.questions/swap-checked-val[0m
+
+  [36m71[0m  [36m[:div.li [:input {:type :radio[0m
+  [36m72[0m  [36m                  :name  q-id[0m
+  [36m73[0m  [36m                  :value id[0m
+  [36m74[0m  [36m                  :id id[0m
+  [33m75[0m  [1m                  :on-change #(do (swap-checked-val checked[0m
+  [0m  [0m  [33m                                  ^--- Wrong number of args (3) passed to htembh.components.questions/swap-checked-val[0m
+  [36m76[0m  [36m                                                    (int (->  % .-target .-value))[0m
+  [36m77[0m  [36m                                                    (int (-> % .-target .-name)))[0m
+  [36m78[0m  [36m                                  (prn @checked))[0m
+  [36m79[0m  [36m                  }][0m
+  [36m80[0m  [36m [:label {:for id} (str text)][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/questions.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.59 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.566 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.549 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.587 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.602 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.551 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.563 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.541 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.582 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.56 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.545 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.557 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.547 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.562 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.58 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.554 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.584 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js

@@ -32,9 +32,9 @@
     (swap! topic-num inc)))
 
 (defn get-next-questions []
-  (if (<= @topic-num 6)
-    (do
-      (session/remove! :questions)
+  (do
+    (session/remove! :questions)
+    (if (<= @topic-num 6)
       (get-questions @topic-num))))
 
 
@@ -47,7 +47,8 @@
 (defn send-responses [checked errors topic]
   (ajax/POST (str "/api/responses/" topic)
              {
-              :params @checked
+              :params {:responses (vec (map #(second %) @checked))
+                       :user (session/get :identity)}
               :handler #(do
                           (reset! checked
                                   {:responses []
@@ -56,12 +57,13 @@
                           (reset-topic-num)
                           (get-next-questions)
                           (get-next-topic))
-              :error-handler #(println @checked)}))
+              :error-handler #(println @checked)
+              }))
 
 
 
-(defn swap-checked-val [checked val]
-  (swap! checked assoc :responses (conj (:responses @checked) val)))
+(defn swap-checked-val [checked name val]
+  (swap! checked assoc name val))
 
 (defn print-responses [responses q-id checked]
   (fn []
@@ -72,9 +74,10 @@
                          :name  q-id
                          :value id
                          :id id
-                         :on-change #(do (swap-checked-val checked
-                                                           (int (->  % .-target .-value)))
-                                         (prn @checked))
+                         :on-change
+                         #(swap-checked-val checked
+                                            (-> % .-target .-name)
+                                            (int (->  % .-target .-value)))
                          }]
         [:label {:for id} (str text)]
         [:div.check
@@ -83,17 +86,13 @@
 
 
 (defn validate-num-responses [checked errors min-num]
-  (let [clicked (count (:responses @checked))]
-    (do
-      (println min-num)
-      (println clicked)
-      (if (not= clicked min-num)
-        (reset! errors "All questions must be answered")
-        (send-responses checked errors @topic-num)))))
+  (let [clicked (count @checked)]
+    (if (not= clicked min-num)
+      (reset! errors "All questions must be answered")
+      (send-responses checked errors @topic-num))))
 
 (defn questions-form [questions]
-  (let [checked (atom {:responses []
-                       :user (session/get :identity)})
+  (let [checked (atom {})
         errors (atom nil)]
     (fn []
       [:div.container

@@ -71,10 +71,12 @@
         min-num (count (db/get-questions {:topic topic}))]
     (= sent min-num)))
 
+(defn validate-user [user]
+  (boolean (db/get-user {:email user})))
 
 (defn save-responses [responses user topic]
   ;; (println responses user topic)
-  (if (validate-num-responses responses topic)
+  (if (and (validate-num-responses responses topic) (validate-user user))
     (let [points (int
                   (reduce +
                           (map #(:points %)
