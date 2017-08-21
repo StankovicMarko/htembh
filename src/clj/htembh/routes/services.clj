@@ -109,4 +109,8 @@
           ;; :path-params [topic :- Long]
           ;; :return Result
           (qs/save-responses responses user topic))
+
+    (GET "/topic/:topic" [topic]
+         :summary "returns name of topic"
+         (ok (qs/get-topic-name topic)))
 ))

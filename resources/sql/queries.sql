@@ -44,6 +44,10 @@ insert into user_responses
 (user, topic, points, date)
 values (:user, :topic, :points, :date)
 
+-- :name get-topic-name :? :1
+-- :doc returns topic name for given id
+select name from topics where id = :topic
+
 
 /*
 -- :name create-user! :! :n

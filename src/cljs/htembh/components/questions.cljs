@@ -12,15 +12,37 @@
              :error-handler #(println %)
              }))
 
+(defn get-topic-name [topic]
+  (ajax/GET (str "/api/topic/" topic)
+            {:handler #(session/put! :topic-name %)
+             :error-handler #(println %)}))
+
+
 (defn get-questions-btn []
   [:button.btn.btn-default.btn-xl 
-   {:on-click #(get-questions @topic-num)}
+   {:on-click #(do (get-questions @topic-num)
+                   (get-topic-name @topic-num))}
    "get questions"])
 
 (defn reset-topic-num []
-  (if (>= @topic-num 6)
-    (reset! topic-num 1)
+  (if (> @topic-num 6)
+    (do
+      (session/remove! :questions)
+      (reset! topic-num 1))
     (swap! topic-num inc)))
+
+(defn get-next-questions []
+  (if (<= @topic-num 6)
+    (do
+      (session/remove! :questions)
+      (get-questions @topic-num))))
+
+
+(defn get-next-topic []
+  (if (<= @topic-num 6)
+    (do
+      (session/remove! :topic-name)
+      (get-topic-name @topic-num))))
 
 (defn send-responses [checked errors topic]
   (ajax/POST (str "/api/responses/" topic)
@@ -31,7 +53,9 @@
                                   {:responses []
                                    :user (session/get :identity)})
                           (reset! errors nil)
-                          (reset-topic-num))
+                          (reset-topic-num)
+                          (get-next-questions)
+                          (get-next-topic))
               :error-handler #(println @checked)}))
 
 
@@ -54,7 +78,6 @@
         [:label {:for id} (str text)]
         [:div.check
          [:div.inside]]])]))
-;;; btn je oke sasvim, sto se izgleda tice.
 
 
 
@@ -73,6 +96,8 @@
         errors (atom nil)]
     (fn []
       [:div.container
+       (when-let [topic-name (:name (session/get :topic-name))]
+         [:h1 topic-name])
        (for [{:keys [id text responses]}  questions]
          ^{:key id}
          [:div.container

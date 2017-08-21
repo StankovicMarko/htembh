@@ -103,3 +103,7 @@
 ;;     ;; (println (decode-transit body))
 ;;     ;; (println (parse-string body true))
 ;;     ))
+
+
+(defn get-topic-name [topic]
+  (db/get-topic-name {:topic topic}))
