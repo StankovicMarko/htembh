@@ -13,7 +13,7 @@
              }))
 
 (defn get-questions-btn []
-  [:button.btn.btn-primary.btn-xl 
+  [:button.btn.btn-default.btn-xl 
    {:on-click #(get-questions @topic-num)}
    "get questions"])
 
@@ -40,15 +40,22 @@
   (swap! checked assoc :responses (conj (:responses @checked) val)))
 
 (defn print-responses [responses q-id checked]
-  (for [{:keys [id text points]} responses]
-    ^{:key id}
-    [:p [:input {:type :radio
-                 :name  q-id
-                 :value id
-                 :on-change #(swap-checked-val checked
-                                               (int (->  % .-target .-value)))
-                 }]
-     (str text)]))
+  (fn []
+    [:div
+     (for [{:keys [id text points]} responses]
+       ^{:key id}
+       [:div.li [:input {:type :radio
+                         :name  q-id
+                         :value id
+                         :id id
+                         :on-change #(swap-checked-val checked
+                                                       (int (->  % .-target .-value)))
+                         }]
+        [:label {:for id} (str text)]
+        [:div.check
+         [:div.inside]]])]))
+;;; btn je oke sasvim, sto se izgleda tice.
+
 
 
 (defn validate-num-responses [checked errors min-num]
@@ -68,13 +75,13 @@
       [:div.container
        (for [{:keys [id text responses]}  questions]
          ^{:key id}
-         [:div.row
-          [:label [:strong text]]
-          (print-responses responses id checked)
-          ])
+         [:div.container
+          [:h2 text]
+          [:div.ul
+           [print-responses responses id checked]]])
        (when-let [error @errors]
          [:div.alert.alert-danger error])
-       [:button.btn.btn-primary
+       [:button.btn.btn-default
         {:on-click #(validate-num-responses checked errors (count questions))}
         "send responses"]])))
 
