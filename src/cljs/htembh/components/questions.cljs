@@ -24,13 +24,6 @@
                    (get-topic-name @topic-num))}
    "get questions"])
 
-(defn reset-topic-num []
-  (if (> @topic-num 6)
-    (do
-      (session/remove! :questions)
-      (reset! topic-num 1))
-    (swap! topic-num inc)))
-
 (defn get-next-questions []
   (do
     (session/remove! :questions)
@@ -44,6 +37,16 @@
       (session/remove! :topic-name)
       (get-topic-name @topic-num))))
 
+
+(defn reset-topic-num []
+  (if (>= @topic-num 6)
+    (do
+      (session/remove! :questions)
+      (reset! topic-num 1))
+    (do (swap! topic-num inc)
+        (get-next-questions)
+        (get-next-topic))))
+
 (defn send-responses [checked errors topic]
   (ajax/POST (str "/api/responses/" topic)
              {
@@ -55,8 +58,8 @@
                                    :user (session/get :identity)})
                           (reset! errors nil)
                           (reset-topic-num)
-                          (get-next-questions)
-                          (get-next-topic))
+                          
+                          )
               :error-handler #(println @checked)
               }))
 
