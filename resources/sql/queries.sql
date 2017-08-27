@@ -55,6 +55,15 @@ select topic,points, max(date)
 from user_responses where user = :email group by topic order by max(date)
 
 
+---- ovo je resenje da hugsql povezuje pitanja i odgovore, moze se desiti da je efikasnije od onoga sto vec imam. neka bude opcija pa cemo videti posle
+-- -- :name get-q&r :? :*
+-- -- :doc returns questions and answers
+-- Select questions.id, questions.text, group_concat(responses.id), group_concat(responses.text)
+-- from questions
+-- join qu_re_connection on questions.id = qu_re_connection.question
+-- join responses on responses.id = qu_re_connection.response
+-- group by questions.id
+
 /*
 -- :name create-user! :! :n
 -- :doc creates a new user record

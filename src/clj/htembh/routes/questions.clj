@@ -111,3 +111,7 @@
 
 (defn get-topic-name [topic]
   (db/get-topic-name {:topic topic}))
+
+
+;; (defn get-q&r [topic]
+;;   (db/get-q&r {:topic topic}))
