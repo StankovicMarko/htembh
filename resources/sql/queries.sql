@@ -52,7 +52,7 @@ select name from topics where id = :topic
 -- :name get-results :? :*
 -- :doc returns results for given email
 select topic,points, max(date)
-from user_responses group by topic order by max(date)
+from user_responses where user = :email group by topic order by max(date)
 
 
 /*

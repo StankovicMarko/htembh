@@ -33,9 +33,7 @@
   (ajax/GET "/api/results" 
             {
              :headers {"email" email}
-             :handler #(do
-                         (prn %)
-                         (session/put! :highcharts-data %))
+             :handler #(session/put! :highcharts-data %)
              :error-handler #(println (str "error" %))
              }))
 
