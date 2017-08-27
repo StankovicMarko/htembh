@@ -2335,3 +2335,667 @@ notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/comp
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.608 seconds.[0m
 notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
 Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.683 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.943 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.881 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:80  column:7  ----[0m
+
+  [1mNo such namespace: res, could not locate res.cljs, res.cljc, or JavaScript source providing ""[0m
+
+  [36m76[0m  [36m(defn htembh-page [][0m
+  [36m77[0m  [36m  (if (not (session/get :questions))[0m
+  [36m78[0m  [36m    [:div.container[0m
+  [36m79[0m  [36m     (qs/get-questions-btn)[0m
+  [33m80[0m  [1m     (res/get-results-btn)]))[0m
+  [0m  [0m  [33m      ^--- No such namespace: res, could not locate res.cljs, res.cljc, or JavaScript source providing ""[0m
+  [36m81[0m  [36m[0m
+  [36m82[0m  [36m(defn about-page [][0m
+  [36m83[0m  [36m  [:div.container[0m
+  [36m84[0m  [36m   [:div.row[0m
+  [36m85[0m  [36m    [:div.col-md-12[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:80  column:7  ----[0m
+
+  [1mUse of undeclared Var res/get-results-btn[0m
+
+  [36m76[0m  [36m(defn htembh-page [][0m
+  [36m77[0m  [36m  (if (not (session/get :questions))[0m
+  [36m78[0m  [36m    [:div.container[0m
+  [36m79[0m  [36m     (qs/get-questions-btn)[0m
+  [33m80[0m  [1m     (res/get-results-btn)]))[0m
+  [0m  [0m  [33m      ^--- Use of undeclared Var res/get-results-btn[0m
+  [36m81[0m  [36m[0m
+  [36m82[0m  [36m(defn about-page [][0m
+  [36m83[0m  [36m  [:div.container[0m
+  [36m84[0m  [36m   [:div.row[0m
+  [36m85[0m  [36m    [:div.col-md-12[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.835 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.391 seconds.[0m
+[36m----  Could not Analyze  src/cljs/htembh/core.cljs  ----[0m
+
+  [1mNo such namespace: htembh.components.results, could not locate htembh/components/results.cljs, htembh/components/results.cljc, or JavaScript source providing "htembh.components.results" [0m
+
+[36m----  Analysis Error : Please see src/cljs/htembh/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:81  column:7  ----[0m
+
+  [1mUse of undeclared Var htembh.components.results/get-results-btn[0m
+
+  [36m77[0m  [36m(defn htembh-page [][0m
+  [36m78[0m  [36m  (if (not (session/get :questions))[0m
+  [36m79[0m  [36m    [:div.container[0m
+  [36m80[0m  [36m     (qs/get-questions-btn)[0m
+  [33m81[0m  [1m     (res/get-results-btn)]))[0m
+  [0m  [0m  [33m      ^--- Use of undeclared Var htembh.components.results/get-results-btn[0m
+  [36m82[0m  [36m[0m
+  [36m83[0m  [36m(defn about-page [][0m
+  [36m84[0m  [36m  [:div.container[0m
+  [36m85[0m  [36m   [:div.row[0m
+  [36m86[0m  [36m    [:div.col-md-12[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.936 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/results.cljs   line:11  column:21  ----[0m
+
+  [1mUse of undeclared Var htembh.components.results/get-questions[0m
+
+  [36m 9[0m  [36m(defn get-results-btn [][0m
+  [36m10[0m  [36m  [:button.btn.btn-default.btn-xl [0m
+  [33m11[0m  [1m   {:on-click #(do (get-questions @topic-num)[0m
+  [0m  [0m  [33m                    ^--- Use of undeclared Var htembh.components.results/get-questions[0m
+  [36m12[0m  [36m                   (get-topic-name @topic-num))}[0m
+  [36m13[0m  [36m   "get questions"])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/results.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/results.cljs   line:11  column:36  ----[0m
+
+  [1mUse of undeclared Var htembh.components.results/topic-num[0m
+
+  [36m 9[0m  [36m(defn get-results-btn [][0m
+  [36m10[0m  [36m  [:button.btn.btn-default.btn-xl [0m
+  [33m11[0m  [1m   {:on-click #(do (get-questions @topic-num)[0m
+  [0m  [0m  [33m                                   ^--- Use of undeclared Var htembh.components.results/topic-num[0m
+  [36m12[0m  [36m                   (get-topic-name @topic-num))}[0m
+  [36m13[0m  [36m   "get questions"])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/results.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/results.cljs   line:12  column:21  ----[0m
+
+  [1mUse of undeclared Var htembh.components.results/get-topic-name[0m
+
+  [36m 9[0m  [36m(defn get-results-btn [][0m
+  [36m10[0m  [36m  [:button.btn.btn-default.btn-xl [0m
+  [36m11[0m  [36m   {:on-click #(do (get-questions @topic-num)[0m
+  [33m12[0m  [1m                   (get-topic-name @topic-num))}[0m
+  [0m  [0m  [33m                    ^--- Use of undeclared Var htembh.components.results/get-topic-name[0m
+  [36m13[0m  [36m   "get questions"])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/results.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/results.cljs   line:12  column:37  ----[0m
+
+  [1mUse of undeclared Var htembh.components.results/topic-num[0m
+
+  [36m 9[0m  [36m(defn get-results-btn [][0m
+  [36m10[0m  [36m  [:button.btn.btn-default.btn-xl [0m
+  [36m11[0m  [36m   {:on-click #(do (get-questions @topic-num)[0m
+  [33m12[0m  [1m                   (get-topic-name @topic-num))}[0m
+  [0m  [0m  [33m                                    ^--- Use of undeclared Var htembh.components.results/topic-num[0m
+  [36m13[0m  [36m   "get questions"])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/results.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.728 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/results.cljs   line:11  column:21  ----[0m
+
+  [1mUse of undeclared Var htembh.components.results/get-results[0m
+
+  [36m 9[0m  [36m(defn get-results-btn [][0m
+  [36m10[0m  [36m  [:button.btn.btn-default.btn-xl [0m
+  [33m11[0m  [1m   {:on-click #(do (get-results (session/get :identity)))}[0m
+  [0m  [0m  [33m                    ^--- Use of undeclared Var htembh.components.results/get-results[0m
+  [36m12[0m  [36m   "Get Results"])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/results.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.68 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.713 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.618 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.678 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.947 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.589 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.578 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.591 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.547 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.75 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:179  column:14  ----[0m
+
+  [1mUse of undeclared Var htembh.core/results[0m
+
+  [36m176[0m  [36m(defn mount-components [][0m
+  [36m177[0m  [36m  (r/render [#'navbar] (.getElementById js/document "navbar"))[0m
+  [36m178[0m  [36m  (r/render [#'page] (.getElementById js/document "app"))[0m
+  [33m179[0m  [1m  (r/render [results] (.getElementById js/document "results")))[0m
+  [0m   [0m  [33m             ^--- Use of undeclared Var htembh.core/results[0m
+  [36m180[0m  [36m[0m
+  [36m181[0m  [36m[0m
+  [36m182[0m  [36m(defn init! [][0m
+  [36m183[0m  [36m  (load-interceptors!)[0m
+  [36m184[0m  [36m  ;; (fetch-docs!)[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.574 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:145  column:4  ----[0m
+
+  [1mNo such namespace: reagent, could not locate reagent.cljs, reagent.cljc, or JavaScript source providing ""[0m
+
+  [36m141[0m  [36m     [(pages (session/get :page))][0m
+  [36m142[0m  [36m     [(pages :home)])])[0m
+  [36m143[0m  [36m[0m
+  [36m144[0m  [36m(defn results [][0m
+  [33m145[0m  [1m  (reagent/create-class {:reagent-render results-render[0m
+  [0m   [0m  [33m   ^--- No such namespace: reagent, could not locate reagent.cljs, reagent.cljc, or JavaScript source providing ""[0m
+  [36m146[0m  [36m                         :component-did-mount results-did-mount}))[0m
+  [36m147[0m  [36m[0m
+  [36m148[0m  [36m;; -------------------------[0m
+  [36m149[0m  [36m;; Routes[0m
+  [36m150[0m  [36m(secretary/set-config! :prefix "#")[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:145  column:4  ----[0m
+
+  [1mUse of undeclared Var reagent/create-class[0m
+
+  [36m141[0m  [36m     [(pages (session/get :page))][0m
+  [36m142[0m  [36m     [(pages :home)])])[0m
+  [36m143[0m  [36m[0m
+  [36m144[0m  [36m(defn results [][0m
+  [33m145[0m  [1m  (reagent/create-class {:reagent-render results-render[0m
+  [0m   [0m  [33m   ^--- Use of undeclared Var reagent/create-class[0m
+  [36m146[0m  [36m                         :component-did-mount results-did-mount}))[0m
+  [36m147[0m  [36m[0m
+  [36m148[0m  [36m;; -------------------------[0m
+  [36m149[0m  [36m;; Routes[0m
+  [36m150[0m  [36m(secretary/set-config! :prefix "#")[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:145  column:42  ----[0m
+
+  [1mUse of undeclared Var htembh.core/results-render[0m
+
+  [36m141[0m  [36m     [(pages (session/get :page))][0m
+  [36m142[0m  [36m     [(pages :home)])])[0m
+  [36m143[0m  [36m[0m
+  [36m144[0m  [36m(defn results [][0m
+  [33m145[0m  [1m  (reagent/create-class {:reagent-render results-render[0m
+  [0m   [0m  [33m                                         ^--- Use of undeclared Var htembh.core/results-render[0m
+  [36m146[0m  [36m                         :component-did-mount results-did-mount}))[0m
+  [36m147[0m  [36m[0m
+  [36m148[0m  [36m;; -------------------------[0m
+  [36m149[0m  [36m;; Routes[0m
+  [36m150[0m  [36m(secretary/set-config! :prefix "#")[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:146  column:47  ----[0m
+
+  [1mUse of undeclared Var htembh.core/results-did-mount[0m
+
+  [36m142[0m  [36m     [(pages :home)])])[0m
+  [36m143[0m  [36m[0m
+  [36m144[0m  [36m(defn results [][0m
+  [36m145[0m  [36m  (reagent/create-class {:reagent-render results-render[0m
+  [33m146[0m  [1m                         :component-did-mount results-did-mount}))[0m
+  [0m   [0m  [33m                                              ^--- Use of undeclared Var htembh.core/results-did-mount[0m
+  [36m147[0m  [36m[0m
+  [36m148[0m  [36m;; -------------------------[0m
+  [36m149[0m  [36m;; Routes[0m
+  [36m150[0m  [36m(secretary/set-config! :prefix "#")[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.624 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:151  column:26  ----[0m
+
+  [1mNo such namespace: reagent, could not locate reagent.cljs, reagent.cljc, or JavaScript source providing ""[0m
+
+  [36m147[0m  [36m                 :height "600px" :margin "0 auto"}}])[0m
+  [36m148[0m  [36m[0m
+  [36m149[0m  [36m[0m
+  [36m150[0m  [36m(defn home-did-mount [this][0m
+  [33m151[0m  [1m  (js/Highcharts.Chart. (reagent/dom-node this) (clj->js chart-config)))[0m
+  [0m   [0m  [33m                         ^--- No such namespace: reagent, could not locate reagent.cljs, reagent.cljc, or JavaScript source providing ""[0m
+  [36m152[0m  [36m[0m
+  [36m153[0m  [36m(defn results [][0m
+  [36m154[0m  [36m  (reagent/create-class {:reagent-render results-render[0m
+  [36m155[0m  [36m                         :component-did-mount results-did-mount}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:151  column:26  ----[0m
+
+  [1mUse of undeclared Var reagent/dom-node[0m
+
+  [36m147[0m  [36m                 :height "600px" :margin "0 auto"}}])[0m
+  [36m148[0m  [36m[0m
+  [36m149[0m  [36m[0m
+  [36m150[0m  [36m(defn home-did-mount [this][0m
+  [33m151[0m  [1m  (js/Highcharts.Chart. (reagent/dom-node this) (clj->js chart-config)))[0m
+  [0m   [0m  [33m                         ^--- Use of undeclared Var reagent/dom-node[0m
+  [36m152[0m  [36m[0m
+  [36m153[0m  [36m(defn results [][0m
+  [36m154[0m  [36m  (reagent/create-class {:reagent-render results-render[0m
+  [36m155[0m  [36m                         :component-did-mount results-did-mount}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:151  column:58  ----[0m
+
+  [1mUse of undeclared Var htembh.core/chart-config[0m
+
+  [36m147[0m  [36m                 :height "600px" :margin "0 auto"}}])[0m
+  [36m148[0m  [36m[0m
+  [36m149[0m  [36m[0m
+  [36m150[0m  [36m(defn home-did-mount [this][0m
+  [33m151[0m  [1m  (js/Highcharts.Chart. (reagent/dom-node this) (clj->js chart-config)))[0m
+  [0m   [0m  [33m                                                         ^--- Use of undeclared Var htembh.core/chart-config[0m
+  [36m152[0m  [36m[0m
+  [36m153[0m  [36m(defn results [][0m
+  [36m154[0m  [36m  (reagent/create-class {:reagent-render results-render[0m
+  [36m155[0m  [36m                         :component-did-mount results-did-mount}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:154  column:4  ----[0m
+
+  [1mNo such namespace: reagent, could not locate reagent.cljs, reagent.cljc, or JavaScript source providing ""[0m
+
+  [36m150[0m  [36m(defn home-did-mount [this][0m
+  [36m151[0m  [36m  (js/Highcharts.Chart. (reagent/dom-node this) (clj->js chart-config)))[0m
+  [36m152[0m  [36m[0m
+  [36m153[0m  [36m(defn results [][0m
+  [33m154[0m  [1m  (reagent/create-class {:reagent-render results-render[0m
+  [0m   [0m  [33m   ^--- No such namespace: reagent, could not locate reagent.cljs, reagent.cljc, or JavaScript source providing ""[0m
+  [36m155[0m  [36m                         :component-did-mount results-did-mount}))[0m
+  [36m156[0m  [36m[0m
+  [36m157[0m  [36m;; -------------------------[0m
+  [36m158[0m  [36m;; Routes[0m
+  [36m159[0m  [36m(secretary/set-config! :prefix "#")[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:154  column:4  ----[0m
+
+  [1mUse of undeclared Var reagent/create-class[0m
+
+  [36m150[0m  [36m(defn home-did-mount [this][0m
+  [36m151[0m  [36m  (js/Highcharts.Chart. (reagent/dom-node this) (clj->js chart-config)))[0m
+  [36m152[0m  [36m[0m
+  [36m153[0m  [36m(defn results [][0m
+  [33m154[0m  [1m  (reagent/create-class {:reagent-render results-render[0m
+  [0m   [0m  [33m   ^--- Use of undeclared Var reagent/create-class[0m
+  [36m155[0m  [36m                         :component-did-mount results-did-mount}))[0m
+  [36m156[0m  [36m[0m
+  [36m157[0m  [36m;; -------------------------[0m
+  [36m158[0m  [36m;; Routes[0m
+  [36m159[0m  [36m(secretary/set-config! :prefix "#")[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:155  column:47  ----[0m
+
+  [1mUse of undeclared Var htembh.core/results-did-mount[0m
+
+  [36m151[0m  [36m  (js/Highcharts.Chart. (reagent/dom-node this) (clj->js chart-config)))[0m
+  [36m152[0m  [36m[0m
+  [36m153[0m  [36m(defn results [][0m
+  [36m154[0m  [36m  (reagent/create-class {:reagent-render results-render[0m
+  [33m155[0m  [1m                         :component-did-mount results-did-mount}))[0m
+  [0m   [0m  [33m                                              ^--- Use of undeclared Var htembh.core/results-did-mount[0m
+  [36m156[0m  [36m[0m
+  [36m157[0m  [36m;; -------------------------[0m
+  [36m158[0m  [36m;; Routes[0m
+  [36m159[0m  [36m(secretary/set-config! :prefix "#")[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.728 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:151  column:26  ----[0m
+
+  [1mNo such namespace: reagent, could not locate reagent.cljs, reagent.cljc, or JavaScript source providing ""[0m
+
+  [36m147[0m  [36m                 :height "600px" :margin "0 auto"}}])[0m
+  [36m148[0m  [36m[0m
+  [36m149[0m  [36m[0m
+  [36m150[0m  [36m(defn results-did-mount [this][0m
+  [33m151[0m  [1m  (js/Highcharts.Chart. (reagent/dom-node this) (clj->js chart-config)))[0m
+  [0m   [0m  [33m                         ^--- No such namespace: reagent, could not locate reagent.cljs, reagent.cljc, or JavaScript source providing ""[0m
+  [36m152[0m  [36m[0m
+  [36m153[0m  [36m(defn results [][0m
+  [36m154[0m  [36m  (reagent/create-class {:reagent-render results-render[0m
+  [36m155[0m  [36m                         :component-did-mount results-did-mount}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:151  column:26  ----[0m
+
+  [1mUse of undeclared Var reagent/dom-node[0m
+
+  [36m147[0m  [36m                 :height "600px" :margin "0 auto"}}])[0m
+  [36m148[0m  [36m[0m
+  [36m149[0m  [36m[0m
+  [36m150[0m  [36m(defn results-did-mount [this][0m
+  [33m151[0m  [1m  (js/Highcharts.Chart. (reagent/dom-node this) (clj->js chart-config)))[0m
+  [0m   [0m  [33m                         ^--- Use of undeclared Var reagent/dom-node[0m
+  [36m152[0m  [36m[0m
+  [36m153[0m  [36m(defn results [][0m
+  [36m154[0m  [36m  (reagent/create-class {:reagent-render results-render[0m
+  [36m155[0m  [36m                         :component-did-mount results-did-mount}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:151  column:58  ----[0m
+
+  [1mUse of undeclared Var htembh.core/chart-config[0m
+
+  [36m147[0m  [36m                 :height "600px" :margin "0 auto"}}])[0m
+  [36m148[0m  [36m[0m
+  [36m149[0m  [36m[0m
+  [36m150[0m  [36m(defn results-did-mount [this][0m
+  [33m151[0m  [1m  (js/Highcharts.Chart. (reagent/dom-node this) (clj->js chart-config)))[0m
+  [0m   [0m  [33m                                                         ^--- Use of undeclared Var htembh.core/chart-config[0m
+  [36m152[0m  [36m[0m
+  [36m153[0m  [36m(defn results [][0m
+  [36m154[0m  [36m  (reagent/create-class {:reagent-render results-render[0m
+  [36m155[0m  [36m                         :component-did-mount results-did-mount}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:154  column:4  ----[0m
+
+  [1mNo such namespace: reagent, could not locate reagent.cljs, reagent.cljc, or JavaScript source providing ""[0m
+
+  [36m150[0m  [36m(defn results-did-mount [this][0m
+  [36m151[0m  [36m  (js/Highcharts.Chart. (reagent/dom-node this) (clj->js chart-config)))[0m
+  [36m152[0m  [36m[0m
+  [36m153[0m  [36m(defn results [][0m
+  [33m154[0m  [1m  (reagent/create-class {:reagent-render results-render[0m
+  [0m   [0m  [33m   ^--- No such namespace: reagent, could not locate reagent.cljs, reagent.cljc, or JavaScript source providing ""[0m
+  [36m155[0m  [36m                         :component-did-mount results-did-mount}))[0m
+  [36m156[0m  [36m[0m
+  [36m157[0m  [36m;; -------------------------[0m
+  [36m158[0m  [36m;; Routes[0m
+  [36m159[0m  [36m(secretary/set-config! :prefix "#")[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:154  column:4  ----[0m
+
+  [1mUse of undeclared Var reagent/create-class[0m
+
+  [36m150[0m  [36m(defn results-did-mount [this][0m
+  [36m151[0m  [36m  (js/Highcharts.Chart. (reagent/dom-node this) (clj->js chart-config)))[0m
+  [36m152[0m  [36m[0m
+  [36m153[0m  [36m(defn results [][0m
+  [33m154[0m  [1m  (reagent/create-class {:reagent-render results-render[0m
+  [0m   [0m  [33m   ^--- Use of undeclared Var reagent/create-class[0m
+  [36m155[0m  [36m                         :component-did-mount results-did-mount}))[0m
+  [36m156[0m  [36m[0m
+  [36m157[0m  [36m;; -------------------------[0m
+  [36m158[0m  [36m;; Routes[0m
+  [36m159[0m  [36m(secretary/set-config! :prefix "#")[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.626 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:151  column:26  ----[0m
+
+  [1mNo such namespace: reagent, could not locate reagent.cljs, reagent.cljc, or JavaScript source providing ""[0m
+
+  [36m147[0m  [36m                 :height "600px" :margin "0 auto"}}])[0m
+  [36m148[0m  [36m[0m
+  [36m149[0m  [36m[0m
+  [36m150[0m  [36m(defn results-did-mount [this][0m
+  [33m151[0m  [1m  (js/Highcharts.Chart. (reagent/dom-node this) (clj->js  res/chart-config)))[0m
+  [0m   [0m  [33m                         ^--- No such namespace: reagent, could not locate reagent.cljs, reagent.cljc, or JavaScript source providing ""[0m
+  [36m152[0m  [36m[0m
+  [36m153[0m  [36m(defn results [][0m
+  [36m154[0m  [36m  (reagent/create-class {:reagent-render results-render[0m
+  [36m155[0m  [36m                         :component-did-mount results-did-mount}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:151  column:26  ----[0m
+
+  [1mUse of undeclared Var reagent/dom-node[0m
+
+  [36m147[0m  [36m                 :height "600px" :margin "0 auto"}}])[0m
+  [36m148[0m  [36m[0m
+  [36m149[0m  [36m[0m
+  [36m150[0m  [36m(defn results-did-mount [this][0m
+  [33m151[0m  [1m  (js/Highcharts.Chart. (reagent/dom-node this) (clj->js  res/chart-config)))[0m
+  [0m   [0m  [33m                         ^--- Use of undeclared Var reagent/dom-node[0m
+  [36m152[0m  [36m[0m
+  [36m153[0m  [36m(defn results [][0m
+  [36m154[0m  [36m  (reagent/create-class {:reagent-render results-render[0m
+  [36m155[0m  [36m                         :component-did-mount results-did-mount}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:154  column:4  ----[0m
+
+  [1mNo such namespace: reagent, could not locate reagent.cljs, reagent.cljc, or JavaScript source providing ""[0m
+
+  [36m150[0m  [36m(defn results-did-mount [this][0m
+  [36m151[0m  [36m  (js/Highcharts.Chart. (reagent/dom-node this) (clj->js  res/chart-config)))[0m
+  [36m152[0m  [36m[0m
+  [36m153[0m  [36m(defn results [][0m
+  [33m154[0m  [1m  (reagent/create-class {:reagent-render results-render[0m
+  [0m   [0m  [33m   ^--- No such namespace: reagent, could not locate reagent.cljs, reagent.cljc, or JavaScript source providing ""[0m
+  [36m155[0m  [36m                         :component-did-mount results-did-mount}))[0m
+  [36m156[0m  [36m[0m
+  [36m157[0m  [36m;; -------------------------[0m
+  [36m158[0m  [36m;; Routes[0m
+  [36m159[0m  [36m(secretary/set-config! :prefix "#")[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:154  column:4  ----[0m
+
+  [1mUse of undeclared Var reagent/create-class[0m
+
+  [36m150[0m  [36m(defn results-did-mount [this][0m
+  [36m151[0m  [36m  (js/Highcharts.Chart. (reagent/dom-node this) (clj->js  res/chart-config)))[0m
+  [36m152[0m  [36m[0m
+  [36m153[0m  [36m(defn results [][0m
+  [33m154[0m  [1m  (reagent/create-class {:reagent-render results-render[0m
+  [0m   [0m  [33m   ^--- Use of undeclared Var reagent/create-class[0m
+  [36m155[0m  [36m                         :component-did-mount results-did-mount}))[0m
+  [36m156[0m  [36m[0m
+  [36m157[0m  [36m;; -------------------------[0m
+  [36m158[0m  [36m;; Routes[0m
+  [36m159[0m  [36m(secretary/set-config! :prefix "#")[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.613 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:151  column:26  ----[0m
+
+  [1mNo such namespace: reagent, could not locate reagent.cljs, reagent.cljc, or JavaScript source providing ""[0m
+
+  [36m147[0m  [36m                 :height "600px" :margin "0 auto"}}])[0m
+  [36m148[0m  [36m[0m
+  [36m149[0m  [36m[0m
+  [36m150[0m  [36m(defn results-did-mount [this][0m
+  [33m151[0m  [1m  (js/Highcharts.Chart. (reagent/dom-node this) (clj->js res/chart-config)))[0m
+  [0m   [0m  [33m                         ^--- No such namespace: reagent, could not locate reagent.cljs, reagent.cljc, or JavaScript source providing ""[0m
+  [36m152[0m  [36m[0m
+  [36m153[0m  [36m(defn results [][0m
+  [36m154[0m  [36m  (reagent/create-class {:reagent-render results-render[0m
+  [36m155[0m  [36m                         :component-did-mount results-did-mount}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:151  column:26  ----[0m
+
+  [1mUse of undeclared Var reagent/dom-node[0m
+
+  [36m147[0m  [36m                 :height "600px" :margin "0 auto"}}])[0m
+  [36m148[0m  [36m[0m
+  [36m149[0m  [36m[0m
+  [36m150[0m  [36m(defn results-did-mount [this][0m
+  [33m151[0m  [1m  (js/Highcharts.Chart. (reagent/dom-node this) (clj->js res/chart-config)))[0m
+  [0m   [0m  [33m                         ^--- Use of undeclared Var reagent/dom-node[0m
+  [36m152[0m  [36m[0m
+  [36m153[0m  [36m(defn results [][0m
+  [36m154[0m  [36m  (reagent/create-class {:reagent-render results-render[0m
+  [36m155[0m  [36m                         :component-did-mount results-did-mount}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:154  column:4  ----[0m
+
+  [1mNo such namespace: reagent, could not locate reagent.cljs, reagent.cljc, or JavaScript source providing ""[0m
+
+  [36m150[0m  [36m(defn results-did-mount [this][0m
+  [36m151[0m  [36m  (js/Highcharts.Chart. (reagent/dom-node this) (clj->js res/chart-config)))[0m
+  [36m152[0m  [36m[0m
+  [36m153[0m  [36m(defn results [][0m
+  [33m154[0m  [1m  (reagent/create-class {:reagent-render results-render[0m
+  [0m   [0m  [33m   ^--- No such namespace: reagent, could not locate reagent.cljs, reagent.cljc, or JavaScript source providing ""[0m
+  [36m155[0m  [36m                         :component-did-mount results-did-mount}))[0m
+  [36m156[0m  [36m[0m
+  [36m157[0m  [36m;; -------------------------[0m
+  [36m158[0m  [36m;; Routes[0m
+  [36m159[0m  [36m(secretary/set-config! :prefix "#")[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:154  column:4  ----[0m
+
+  [1mUse of undeclared Var reagent/create-class[0m
+
+  [36m150[0m  [36m(defn results-did-mount [this][0m
+  [36m151[0m  [36m  (js/Highcharts.Chart. (reagent/dom-node this) (clj->js res/chart-config)))[0m
+  [36m152[0m  [36m[0m
+  [36m153[0m  [36m(defn results [][0m
+  [33m154[0m  [1m  (reagent/create-class {:reagent-render results-render[0m
+  [0m   [0m  [33m   ^--- Use of undeclared Var reagent/create-class[0m
+  [36m155[0m  [36m                         :component-did-mount results-did-mount}))[0m
+  [36m156[0m  [36m[0m
+  [36m157[0m  [36m;; -------------------------[0m
+  [36m158[0m  [36m;; Routes[0m
+  [36m159[0m  [36m(secretary/set-config! :prefix "#")[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.633 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.791 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.621 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.588 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.538 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.56 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.654 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.57 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.544 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.591 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.613 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.547 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.558 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.545 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.536 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.549 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.566 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.764 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.588 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.621 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.613 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.565 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.503 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.577 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.578 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.517 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.671 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.563 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js

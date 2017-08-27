@@ -195,6 +195,10 @@ input[type=radio]:checked ~ label{
 	background: #afafaf;
 }
 
+.btn-default {
+	border: 1px solid black;
+}
+
 h1{
 	text-align: center;
 	color: white;

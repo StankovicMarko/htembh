@@ -44,6 +44,8 @@
 (defn get-questions&responses [topic-id]
   (map #(assoc % :responses (get-answers (:id %))) (get-questions topic-id)))
 
+;;; That would be a select on questions that joins on answers, then you would group-by topic ID. solution to above not very great function
+
 ;; (defn get-q&r [topic-id]
 ;;   (-> {:questions (map #(assoc % :responses (get-answers (:id %))) (get-questions topic-id))}
 ;;      (response/ok)))

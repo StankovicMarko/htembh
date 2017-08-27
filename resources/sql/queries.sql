@@ -49,6 +49,12 @@ values (:user, :topic, :points, :date)
 select name from topics where id = :topic
 
 
+-- :name get-results :? :*
+-- :doc returns results for given email
+select topic,points, max(date)
+from user_responses group by topic order by max(date)
+
+
 /*
 -- :name create-user! :! :n
 -- :doc creates a new user record

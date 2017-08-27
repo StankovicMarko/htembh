@@ -9,7 +9,8 @@
             [ajax.core :refer [GET POST]]
             [htembh.components.registration :as reg]
             [htembh.components.login :as l]
-            [htembh.components.questions :as qs])
+            [htembh.components.questions :as qs]
+            [htembh.components.results :as res])
   (:import goog.History))
 
 (defn user-menu []
@@ -74,8 +75,10 @@
      "this is the story of htembh... work in progress"]]])
 
 (defn htembh-page []
-  [:div.container
-   (qs/get-questions-btn)])
+  (if (not (session/get :questions))
+    [:div.container
+     (qs/get-questions-btn)
+     (res/get-results-btn)]))
 
 (defn about-page []
   [:div.container
@@ -138,6 +141,24 @@ Hope this web app makes your life more easier and maybe helps you
      [(pages (session/get :page))]
      [(pages :home)])])
 
+
+(defn results-render []
+  (if (and (not (session/get :questions)) (session/get :highcharts-data))
+    [:div {:style {:min-width "310px" :max-width "1200px"
+                   :height "600px" :margin "0 auto"}}]))
+
+
+(defn results-did-mount [this]
+  (if (and (not (session/get :questions)) (session/get :highcharts-data))
+    (js/Highcharts.Chart. (r/dom-node this) (clj->js
+                                             (assoc res/chart-config :series
+                                                    (conj [] (session/get :highcharts-data)))))))
+
+(defn results []
+  (r/create-class {:reagent-render results-render
+                   :component-did-update results-did-mount
+                   :component-did-mount results-did-mount}))
+
 ;; -------------------------
 ;; Routes
 (secretary/set-config! :prefix "#")
@@ -172,7 +193,9 @@ Hope this web app makes your life more easier and maybe helps you
 
 (defn mount-components []
   (r/render [#'navbar] (.getElementById js/document "navbar"))
-  (r/render [#'page] (.getElementById js/document "app")))
+  (r/render [#'page] (.getElementById js/document "app"))
+  (r/render [#'results] (.getElementById js/document "results")))
+
 
 (defn init! []
   (load-interceptors!)
