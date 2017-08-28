@@ -128,6 +128,12 @@ Hope this web app makes your life more easier and maybe helps you
    })
 
 
+;; - idea to scroll up after clicking next
+;;try adding this to whatever function you are calling to click next
+;;(defn- scroll-to-top []
+;;  (.scroll js/window 0 0))
+
+
 (defn modal []
   (when-let [session-modal (session/get :modal)]
     [session-modal]))
