@@ -33,14 +33,25 @@
                      :yellow 260}
                     ])
 
+
+(defn get-last-ones [seq]
+  (loop [final-six [] batch seq]
+    (if (= 6 (count final-six))
+      final-six
+      (let [topic-id (:topic (first batch))]
+        (if (empty? (filter #(= topic-id (:topic %)) final-six))
+          (recur (conj final-six (first batch)) (rest batch))
+          (recur final-six (rest batch)))))))
+
+
 (defn get-results [email]
-  (map #(rename-keys % {(keyword "max(date)") :date}) (db/get-results {:email email})))
+  (get-last-ones (db/get-results {:email email})))
+
 
 (defn unparse-date [email]
   (map #(assoc % :date
                (f/unparse custom-formatter (:date %)))
        (sort-by :topic (get-results email))))
-
 
 
 (defn add-color [map color]

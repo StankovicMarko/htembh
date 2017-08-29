@@ -5,10 +5,18 @@
 
 (def topic-num (atom 1))
 
+;; - idea to scroll up after clicking next
+;;try adding this to whatever function you are calling to click next
+(defn scroll-to-top []
+ (.scroll js/window 0 0))
+
 (defn get-questions [topic]
   (ajax/GET (str "/api/questions/" topic)
             {
-             :handler #(session/put! :questions  %)
+             :handler #(do
+                         (scroll-to-top)
+                         (session/put! :questions  %)
+                           )
              :error-handler #(println %)
              }))
 
