@@ -118,5 +118,5 @@
     (GET "/results" [email]
          :header-params [email :- String]
          :summary "returns his last results"
-         (ok (res/highcharts-data email)))
+         (res/highcharts-data email))
 ))

@@ -83,5 +83,9 @@
 
 
 (defn highcharts-data [email]
-  (let [results (map-color email)]
-    (assoc (assoc {} :name (:date (first results))) :data (transform-data results))))
+  (if-let [user (db/get-user {:email email})]
+    (response/ok
+     (let [results (map-color email)]
+       (assoc (assoc {} :name (:date (first results))) :data (transform-data results))))
+    (response/unauthorized {:result :error
+                            :message "please login first"})))

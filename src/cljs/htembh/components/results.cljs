@@ -29,17 +29,17 @@
             ]})
 
 
-(defn get-results [email]
+(defn get-results [email errors]
   (ajax/GET "/api/results" 
             {
              :headers {"email" email}
              :handler #(session/put! :highcharts-data %)
-             :error-handler #(println (str "error" %))
+             :error-handler #(reset! errors (:message (:response %)))
              }))
 
-(defn get-results-btn []
+(defn get-results-btn [errors]
   [:button.btn.btn-default.btn-xl 
-   {:on-click #(do (get-results (session/get :identity)))}
+   {:on-click #(do (get-results (session/get :identity) errors))}
    "Get Results"])
 
 

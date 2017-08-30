@@ -3307,3 +3307,287 @@ Notifying browser that CSS file changed: resources/public/css/screen.css
 Notifying browser that CSS file changed: resources/public/css/screen.css
 Notifying browser that CSS file changed: resources/public/css/screen.css
 Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.918 seconds.[0m
+[36m----  Could not Read  src/cljs/htembh/core.cljs   line:81 ----[0m
+
+  [1m/home/marko/clojure/htembh/src/cljs/htembh/core.cljs [line 81, col 28] Unmatched delimiter ].[0m
+
+  [36m79[0m  [36m    [:div.container[0m
+  [36m80[0m  [36m     [qs/get-questions-btn]][0m
+  [33m81[0m  [1m     (res/get-results-btn)]))[0m
+  [0m  [0m  [33m     /home/marko/clojure/htembh/src/cljs/htembh/core.cljs [line 81, col 28] Unmatched delimiter ].[0m
+  [36m82[0m  [36m[0m
+  [36m83[0m  [36m(defn about-page [][0m
+  [36m84[0m  [36m  [:div.container[0m
+
+[36m----  Reader Error : Please see src/cljs/htembh/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.871 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.786 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.803 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.629 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:82  column:15  ----[0m
+
+  [1mUse of undeclared Var htembh.core/press[0m
+
+  [36m78[0m  [36m  (if (not (session/get :questions))[0m
+  [36m79[0m  [36m    [:div.container[0m
+  [36m80[0m  [36m     [:div.row[0m
+  [36m81[0m  [36m      [qs/get-questions-btn][0m
+  [33m82[0m  [1m      [:label press]][0m
+  [0m  [0m  [33m              ^--- Use of undeclared Var htembh.core/press[0m
+  [36m83[0m  [36m     [res/get-results-btn]]))[0m
+  [36m84[0m  [36m[0m
+  [36m85[0m  [36m(defn about-page [][0m
+  [36m86[0m  [36m  [:div.container[0m
+  [36m87[0m  [36m   [:div.row[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.763 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.738 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.645 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.612 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.627 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.59 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.362 seconds.[0m
+[36m----  Could not Read  src/cljs/htembh/core.cljs   line:83 ----[0m
+
+  [1m/home/marko/clojure/htembh/src/cljs/htembh/core.cljs [line 83, col 9] Invalid keyword: :.[0m
+
+  [36m81[0m  [36m [qs/get-questions-btn][0m
+  [36m82[0m  [36m [:label "To start questionnaire press this button"][0m
+  [33m83[0m  [1m [:]][0m
+  [0m  [0m  [33m /home/marko/clojure/htembh/src/cljs/htembh/core.cljs [line 83, col 9] Invalid keyword: :.[0m
+  [36m84[0m  [36m[:div.row[0m
+  [36m85[0m  [36m [res/get-results-btn]]]))[0m
+
+[36m----  Reader Error : Please see src/cljs/htembh/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.597 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.639 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.59 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.569 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.607 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.6 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.6 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.631 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.637 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.582 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:82  column:28  ----[0m
+
+  [1mUse of undeclared Var htembh.core/error[0m
+
+  [36m78[0m  [36m(if (not (session/get :questions))[0m
+  [36m79[0m  [36m  (let [errors (r/atom nil)][0m
+  [36m80[0m  [36m    (fn [][0m
+  [36m81[0m  [36m      [:div.container[0m
+  [33m82[0m  [1m       (when-let [error @error][0m
+  [0m  [0m  [33m                         ^--- Use of undeclared Var htembh.core/error[0m
+  [36m83[0m  [36m         [:div.alert.alert-danger error ])[0m
+  [36m84[0m  [36m       [:div.row[0m
+  [36m85[0m  [36m        [:label "- To start questionnaire press "][0m
+  [36m86[0m  [36m        [qs/get-questions-btn][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.68 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:82  column:28  ----[0m
+
+  [1mUse of undeclared Var htembh.core/error[0m
+
+  [36m78[0m  [36m(if (not (session/get :questions))[0m
+  [36m79[0m  [36m  (let [errors (r/atom nil)][0m
+  [36m80[0m  [36m    (fn [][0m
+  [36m81[0m  [36m      [:div.container[0m
+  [33m82[0m  [1m       (when-let [error @error][0m
+  [0m  [0m  [33m                         ^--- Use of undeclared Var htembh.core/error[0m
+  [36m83[0m  [36m         [:div.alert.alert-danger error])[0m
+  [36m84[0m  [36m       [:div.row[0m
+  [36m85[0m  [36m        [:label "- To start questionnaire press "][0m
+  [36m86[0m  [36m        [qs/get-questions-btn][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.671 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:82  column:28  ----[0m
+
+  [1mUse of undeclared Var htembh.core/error[0m
+
+  [36m78[0m  [36m(if (not (session/get :questions))[0m
+  [36m79[0m  [36m  (let [errors (r/atom nil)][0m
+  [36m80[0m  [36m    (fn [][0m
+  [36m81[0m  [36m      [:div.container[0m
+  [33m82[0m  [1m       (when-let [error @error][0m
+  [0m  [0m  [33m                         ^--- Use of undeclared Var htembh.core/error[0m
+  [36m83[0m  [36m         [:div.alert.alert-danger error])[0m
+  [36m84[0m  [36m       [:div.row[0m
+  [36m85[0m  [36m        [:label "- To start questionnaire press "][0m
+  [36m86[0m  [36m        [qs/get-questions-btn][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.68 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:82  column:28  ----[0m
+
+  [1mUse of undeclared Var htembh.core/error[0m
+
+  [36m78[0m  [36m(if (not (session/get :questions))[0m
+  [36m79[0m  [36m  (let [errors (r/atom nil)][0m
+  [36m80[0m  [36m    (fn [][0m
+  [36m81[0m  [36m      [:div.container[0m
+  [33m82[0m  [1m       (when-let [error @error][0m
+  [0m  [0m  [33m                         ^--- Use of undeclared Var htembh.core/error[0m
+  [36m83[0m  [36m         [:div.alert.alert-danger error])[0m
+  [36m84[0m  [36m       [:div.row[0m
+  [36m85[0m  [36m        [:label "- To start questionnaire press "][0m
+  [36m86[0m  [36m        [qs/get-questions-btn][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.63 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:82  column:28  ----[0m
+
+  [1mUse of undeclared Var htembh.core/error[0m
+
+  [36m78[0m  [36m(if (not (session/get :questions))[0m
+  [36m79[0m  [36m  (let [errors (r/atom nil)][0m
+  [36m80[0m  [36m    (fn [][0m
+  [36m81[0m  [36m      [:div.container[0m
+  [33m82[0m  [1m       (when-let [error @error][0m
+  [0m  [0m  [33m                         ^--- Use of undeclared Var htembh.core/error[0m
+  [36m83[0m  [36m         [:div.alert.alert-danger error])[0m
+  [36m84[0m  [36m       [:div.row[0m
+  [36m85[0m  [36m        [:label "- To start questionnaire press "][0m
+  [36m86[0m  [36m        [qs/get-questions-btn][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.671 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:82  column:28  ----[0m
+
+  [1mUse of undeclared Var htembh.core/error[0m
+
+  [36m78[0m  [36m(if (not (session/get :questions))[0m
+  [36m79[0m  [36m  (let [errors (r/atom nil)][0m
+  [36m80[0m  [36m    (fn [][0m
+  [36m81[0m  [36m      [:div.container[0m
+  [33m82[0m  [1m       (when-let [error @error][0m
+  [0m  [0m  [33m                         ^--- Use of undeclared Var htembh.core/error[0m
+  [36m83[0m  [36m         [:div.alert.alert-danger error])[0m
+  [36m84[0m  [36m       [:div.row[0m
+  [36m85[0m  [36m        [:label "- To start questionnaire press "][0m
+  [36m86[0m  [36m        [qs/get-questions-btn][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.644 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:82  column:28  ----[0m
+
+  [1mUse of undeclared Var htembh.core/error[0m
+
+  [36m78[0m  [36m(if (not (session/get :questions))[0m
+  [36m79[0m  [36m  (let [errors (r/atom nil)][0m
+  [36m80[0m  [36m    (fn [][0m
+  [36m81[0m  [36m      [:div.container[0m
+  [33m82[0m  [1m       (when-let [error @error][0m
+  [0m  [0m  [33m                         ^--- Use of undeclared Var htembh.core/error[0m
+  [36m83[0m  [36m         [:div.alert.alert-danger error])[0m
+  [36m84[0m  [36m       [:div.row[0m
+  [36m85[0m  [36m        [:label "- To start questionnaire press "][0m
+  [36m86[0m  [36m        [qs/get-questions-btn][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.749 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.573 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.231 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.121 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.003 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/results.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.941 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.44 seconds.[0m
+[36m----  Could not Analyze  src/cljs/htembh/core.cljs   line:82  column:10  ----[0m
+
+  [1mwhen-let requires exactly 2 forms in binding vector in htembh.core:82[0m
+
+  [36m80[0m  [36m(if (not (session/get :questions))[0m
+  [36m81[0m  [36m[:div.container[0m
+  [33m82[0m  [1m (when-let [error @errors[0m
+  [0m  [0m  [33m ^--- when-let requires exactly 2 forms in binding vector in htembh.core:82[0m
+  [36m83[0m  [36m            email (not (session/get :identity))][0m
+  [36m84[0m  [36m   [:div.alert.alert-danger error])[0m
+  [36m85[0m  [36m [:div.row[0m
+
+[36m----  Analysis Error : Please see src/cljs/htembh/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.955 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.902 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js

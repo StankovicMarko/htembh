@@ -75,10 +75,20 @@
      "this is the story of htembh... work in progress"]]])
 
 (defn htembh-page []
-  (if (not (session/get :questions))
-    [:div.container
-     (qs/get-questions-btn)
-     (res/get-results-btn)]))
+    (let [errors (r/atom nil)]
+      (fn []
+        (if (not (session/get :questions))
+        [:div.container
+         (when (and (not (empty? @errors)) (not (session/get :identity)))
+           [:div.alert.alert-danger @errors])
+         [:div.row
+          [:label "- To start questionnaire press "]
+          [qs/get-questions-btn]
+          
+          [:p "(There are 6 topics with multiple questions per topic, usually takes 10 minutes to complete the questionnaire)"]]
+         [:div.row
+          [:label "- To get your most recent results press "]
+          [res/get-results-btn errors]]]))))
 
 (defn about-page []
   [:div.container
