@@ -15,14 +15,14 @@
 
 (defn user-menu []
   (if-let [id (session/get :identity)]
-    [:ul.nav.navbar-nav.pull-xs-right
+    [:ul.nav.navbar-nav.float-xs-right
      [:li.nav-item
       [:a.dropdown-item.btn
        {:on-click #(POST
                     "/api/logout"
                     {:handler (fn [] (session/remove! :identity))})}
        [:i.fa.fa-user] " " id " | sign out"]]]
-    [:ul.nav.navbar-nav.pull-xs-right
+    [:ul.nav.navbar-nav.float-xs-right
      [:li.nav-item [l/login-button]]
      [:li.nav-item [reg/registration-button]]]))
 
@@ -131,6 +131,7 @@ Hope this web app makes your life more easier and maybe helps you
 (defn modal []
   (when-let [session-modal (session/get :modal)]
     [session-modal]))
+
 
 (defn page []
   [:div

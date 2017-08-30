@@ -3036,3 +3036,274 @@ notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/comp
 [0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.032 seconds.[0m
 notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.338 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:125  column:12  ----[0m
+
+  [1mcljs.core/>, all arguments must be numbers, got [js boolean] instead.[0m
+
+  [36m121[0m  [36m;;              {:__html (md->html docs)}}]])])[0m
+  [36m122[0m  [36m[0m
+  [36m123[0m  [36m(defn show-scroll-btn [][0m
+  [36m124[0m  [36m   (or (> js/document.body.scrollTop 500)[0m
+  [33m125[0m  [1m           (> js/document.documentElement.scrollTop > 500)))[0m
+  [0m   [0m  [33m           ^--- cljs.core/>, all arguments must be numbers, got [js boolean] instead.[0m
+  [36m126[0m  [36m[0m
+  [36m127[0m  [36m(def pages[0m
+  [36m128[0m  [36m  {:home #'home-page[0m
+  [36m129[0m  [36m   :htembh #'htembh-page[0m
+  [36m130[0m  [36m   :ppd #'ppd-page[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:125  column:12  ----[0m
+
+  [1mcljs.core/>, all arguments must be numbers, got [boolean number] instead.[0m
+
+  [36m121[0m  [36m;;              {:__html (md->html docs)}}]])])[0m
+  [36m122[0m  [36m[0m
+  [36m123[0m  [36m(defn show-scroll-btn [][0m
+  [36m124[0m  [36m   (or (> js/document.body.scrollTop 500)[0m
+  [33m125[0m  [1m           (> js/document.documentElement.scrollTop > 500)))[0m
+  [0m   [0m  [33m           ^--- cljs.core/>, all arguments must be numbers, got [boolean number] instead.[0m
+  [36m126[0m  [36m[0m
+  [36m127[0m  [36m(def pages[0m
+  [36m128[0m  [36m  {:home #'home-page[0m
+  [36m129[0m  [36m   :htembh #'htembh-page[0m
+  [36m130[0m  [36m   :ppd #'ppd-page[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.756 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:125  column:12  ----[0m
+
+  [1mcljs.core/>, all arguments must be numbers, got [js boolean] instead.[0m
+
+  [36m121[0m  [36m;;              {:__html (md->html docs)}}]])])[0m
+  [36m122[0m  [36m[0m
+  [36m123[0m  [36m(defn showScroll [][0m
+  [36m124[0m  [36m   (or (> js/document.body.scrollTop 500)[0m
+  [33m125[0m  [1m           (> js/document.documentElement.scrollTop > 500)))[0m
+  [0m   [0m  [33m           ^--- cljs.core/>, all arguments must be numbers, got [js boolean] instead.[0m
+  [36m126[0m  [36m[0m
+  [36m127[0m  [36m(def pages[0m
+  [36m128[0m  [36m  {:home #'home-page[0m
+  [36m129[0m  [36m   :htembh #'htembh-page[0m
+  [36m130[0m  [36m   :ppd #'ppd-page[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:125  column:12  ----[0m
+
+  [1mcljs.core/>, all arguments must be numbers, got [boolean number] instead.[0m
+
+  [36m121[0m  [36m;;              {:__html (md->html docs)}}]])])[0m
+  [36m122[0m  [36m[0m
+  [36m123[0m  [36m(defn showScroll [][0m
+  [36m124[0m  [36m   (or (> js/document.body.scrollTop 500)[0m
+  [33m125[0m  [1m           (> js/document.documentElement.scrollTop > 500)))[0m
+  [0m   [0m  [33m           ^--- cljs.core/>, all arguments must be numbers, got [boolean number] instead.[0m
+  [36m126[0m  [36m[0m
+  [36m127[0m  [36m(def pages[0m
+  [36m128[0m  [36m  {:home #'home-page[0m
+  [36m129[0m  [36m   :htembh #'htembh-page[0m
+  [36m130[0m  [36m   :ppd #'ppd-page[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:148  column:11  ----[0m
+
+  [1mUse of undeclared Var htembh.core/show-scroll-btn[0m
+
+  [36m144[0m  [36m     [qs/questions-form  questions])[0m
+  [36m145[0m  [36m   (if (not= (session/get :page) nil)[0m
+  [36m146[0m  [36m     [(pages (session/get :page))][0m
+  [36m147[0m  [36m     [(pages :home)])[0m
+  [33m148[0m  [1m   (when (show-scroll-btn)[0m
+  [0m   [0m  [33m          ^--- Use of undeclared Var htembh.core/show-scroll-btn[0m
+  [36m149[0m  [36m     [:button {:on-click #(qs/scroll-to-top)[0m
+  [36m150[0m  [36m               :id "myBtn"} "Top"])])[0m
+  [36m151[0m  [36m[0m
+  [36m152[0m  [36m[0m
+  [36m153[0m  [36m(defn results-render [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.176 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:147  column:11  ----[0m
+
+  [1mUse of undeclared Var htembh.core/show-scroll-btn[0m
+
+  [36m143[0m  [36m     [qs/questions-form  questions])[0m
+  [36m144[0m  [36m   (if (not= (session/get :page) nil)[0m
+  [36m145[0m  [36m     [(pages (session/get :page))][0m
+  [36m146[0m  [36m     [(pages :home)])[0m
+  [33m147[0m  [1m   (when (show-scroll-btn)[0m
+  [0m   [0m  [33m          ^--- Use of undeclared Var htembh.core/show-scroll-btn[0m
+  [36m148[0m  [36m     [:button {:on-click #(qs/scroll-to-top)[0m
+  [36m149[0m  [36m               :id "myBtn"} "Top"])])[0m
+  [36m150[0m  [36m[0m
+  [36m151[0m  [36m[0m
+  [36m152[0m  [36m(defn results-render [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.214 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.988 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:125  column:12  ----[0m
+
+  [1mcljs.core/>, all arguments must be numbers, got [js boolean] instead.[0m
+
+  [36m121[0m  [36m;;              {:__html (md->html docs)}}]])])[0m
+  [36m122[0m  [36m[0m
+  [36m123[0m  [36m(defn show-scroll-btn [][0m
+  [36m124[0m  [36m   (or (> js/document.body.scrollTop 500)[0m
+  [33m125[0m  [1m           (> js/document.documentElement.scrollTop > 500)))[0m
+  [0m   [0m  [33m           ^--- cljs.core/>, all arguments must be numbers, got [js boolean] instead.[0m
+  [36m126[0m  [36m[0m
+  [36m127[0m  [36m(def pages[0m
+  [36m128[0m  [36m  {:home #'home-page[0m
+  [36m129[0m  [36m   :htembh #'htembh-page[0m
+  [36m130[0m  [36m   :ppd #'ppd-page[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:125  column:12  ----[0m
+
+  [1mcljs.core/>, all arguments must be numbers, got [boolean number] instead.[0m
+
+  [36m121[0m  [36m;;              {:__html (md->html docs)}}]])])[0m
+  [36m122[0m  [36m[0m
+  [36m123[0m  [36m(defn show-scroll-btn [][0m
+  [36m124[0m  [36m   (or (> js/document.body.scrollTop 500)[0m
+  [33m125[0m  [1m           (> js/document.documentElement.scrollTop > 500)))[0m
+  [0m   [0m  [33m           ^--- cljs.core/>, all arguments must be numbers, got [boolean number] instead.[0m
+  [36m126[0m  [36m[0m
+  [36m127[0m  [36m(def pages[0m
+  [36m128[0m  [36m  {:home #'home-page[0m
+  [36m129[0m  [36m   :htembh #'htembh-page[0m
+  [36m130[0m  [36m   :ppd #'ppd-page[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.857 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:125  column:8  ----[0m
+
+  [1mcljs.core/>, all arguments must be numbers, got [js boolean] instead.[0m
+
+  [36m121[0m  [36m;;              {:__html (md->html docs)}}]])])[0m
+  [36m122[0m  [36m[0m
+  [36m123[0m  [36m(defn show-scroll-btn [][0m
+  [36m124[0m  [36m   (or (> js/document.body.scrollTop 500)[0m
+  [33m125[0m  [1m       (> js/document.documentElement.scrollTop > 500)))[0m
+  [0m   [0m  [33m       ^--- cljs.core/>, all arguments must be numbers, got [js boolean] instead.[0m
+  [36m126[0m  [36m[0m
+  [36m127[0m  [36m(def pages[0m
+  [36m128[0m  [36m  {:home #'home-page[0m
+  [36m129[0m  [36m   :htembh #'htembh-page[0m
+  [36m130[0m  [36m   :ppd #'ppd-page[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:125  column:8  ----[0m
+
+  [1mcljs.core/>, all arguments must be numbers, got [boolean number] instead.[0m
+
+  [36m121[0m  [36m;;              {:__html (md->html docs)}}]])])[0m
+  [36m122[0m  [36m[0m
+  [36m123[0m  [36m(defn show-scroll-btn [][0m
+  [36m124[0m  [36m   (or (> js/document.body.scrollTop 500)[0m
+  [33m125[0m  [1m       (> js/document.documentElement.scrollTop > 500)))[0m
+  [0m   [0m  [33m       ^--- cljs.core/>, all arguments must be numbers, got [boolean number] instead.[0m
+  [36m126[0m  [36m[0m
+  [36m127[0m  [36m(def pages[0m
+  [36m128[0m  [36m  {:home #'home-page[0m
+  [36m129[0m  [36m   :htembh #'htembh-page[0m
+  [36m130[0m  [36m   :ppd #'ppd-page[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.904 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.773 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.839 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.814 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.766 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.786 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.73 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.741 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.608 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.729 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
