@@ -4,6 +4,9 @@
             [secretary.core :as secretary :include-macros true]
             [goog.events :as events]
             [goog.history.EventType :as HistoryEventType]
+
+            [goog.dom :as dom]
+            
             [markdown.core :refer [md->html]]
             [htembh.ajax :refer [load-interceptors!]]
             [ajax.core :refer [GET POST]]
@@ -142,7 +145,6 @@ Hope this web app makes your life more easier and maybe helps you
   (when-let [session-modal (session/get :modal)]
     [session-modal]))
 
-
 (defn page []
   [:div
    [modal]
@@ -150,7 +152,10 @@ Hope this web app makes your life more easier and maybe helps you
      [qs/questions-form  questions])
    (if (not= (session/get :page) nil)
      [(pages (session/get :page))]
-     [(pages :home)])])
+     [(pages :home)])
+   [:button {:on-click qs/scroll-to-top
+             :id "myBtn"
+             :title "Go to top"} "Top"]])
 
 
 (defn results-render []

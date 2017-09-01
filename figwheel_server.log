@@ -3591,3 +3591,385 @@ notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core
 [0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.902 seconds.[0m
 notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.132 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.392 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.478 seconds.[0m
+[36m----  Could not Analyze  src/cljs/htembh/core.cljs   line:147  column:3  ----[0m
+
+  [1mToo few arguments to if at line 147 /home/marko/clojure/htembh/src/cljs/htembh/core.cljs[0m
+
+  [36m146[0m  [36m(defn ^:export scrollFunction [][0m
+  [33m147[0m  [1m  (if (or (> 500 (.-scrollTop (js/document.body))) (> 500 (.-scrollTop (js/document.documentElement))))))[0m
+  [0m   [0m  [33m  ^--- Too few arguments to if at line 147 /home/marko/clojure/htembh/src/cljs/htembh/core.cljs[0m
+  [36m148[0m  [36m[0m
+  [36m149[0m  [36m(defn page [][0m
+  [36m150[0m  [36m  [:div[0m
+
+[36m----  Analysis Error : Please see src/cljs/htembh/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.788 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.712 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.737 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.718 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.724 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.707 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/core.cljs   line:96  column:30  ----[0m
+
+  [1mUse of undeclared Var htembh.core/get-scroll[0m
+
+  [36m 92[0m  [36m         [:div.row[0m
+  [36m 93[0m  [36m          [:label "- To get your most recent results press "][0m
+  [36m 94[0m  [36m          [res/get-results-btn errors]][0m
+  [36m 95[0m  [36m[0m
+  [33m 96[0m  [1m         [:button {:on-click get-scroll} "aaa"]]))))[0m
+  [0m   [0m  [33m                             ^--- Use of undeclared Var htembh.core/get-scroll[0m
+  [36m 97[0m  [36m[0m
+  [36m 98[0m  [36m(defn about-page [][0m
+  [36m 99[0m  [36m  [:div.container[0m
+  [36m100[0m  [36m   [:div.row[0m
+  [36m101[0m  [36m    [:div.col-md-12[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.452 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.064 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.148 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.887 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.972 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.891 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.894 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.685 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/scroll.cljs   line:13  column:34  ----[0m
+
+  [1mUse of undeclared Var htembh.components.scroll/put![0m
+
+  [36m 9[0m  [36m(defn- get-scroll [][0m
+  [36m10[0m  [36m  (-> (dom/getDocumentScroll) (.-y)))[0m
+  [36m11[0m  [36m[0m
+  [36m12[0m  [36m(defn- events->chan [el event-type c][0m
+  [33m13[0m  [1m  (events/listen el event-type #(put! c %))[0m
+  [0m  [0m  [33m                                 ^--- Use of undeclared Var htembh.components.scroll/put![0m
+  [36m14[0m  [36m  c)[0m
+  [36m15[0m  [36m[0m
+  [36m16[0m  [36m(defn scroll-chan-events [] [0m
+  [36m17[0m  [36m  (events->chan js/window EventType/SCROLL (chan 1 (map get-scroll))))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/scroll.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/scroll.cljs   line:17  column:27  ----[0m
+
+  [1mNo such namespace: EventType, could not locate EventType.cljs, EventType.cljc, or JavaScript source providing ""[0m
+
+  [36m13[0m  [36m  (events/listen el event-type #(put! c %))[0m
+  [36m14[0m  [36m  c)[0m
+  [36m15[0m  [36m[0m
+  [36m16[0m  [36m(defn scroll-chan-events [] [0m
+  [33m17[0m  [1m  (events->chan js/window EventType/SCROLL (chan 1 (map get-scroll))))[0m
+  [0m  [0m  [33m                          ^--- No such namespace: EventType, could not locate EventType.cljs, EventType.cljc, or JavaScript source providing ""[0m
+  [36m18[0m  [36m[0m
+  [36m19[0m  [36m[0m
+  [36m20[0m  [36m(def cur-scroll-y (r/atom 0))[0m
+  [36m21[0m  [36m[0m
+  [36m22[0m  [36m(defn listen! [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/scroll.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/scroll.cljs   line:17  column:27  ----[0m
+
+  [1mUse of undeclared Var EventType/SCROLL[0m
+
+  [36m13[0m  [36m  (events/listen el event-type #(put! c %))[0m
+  [36m14[0m  [36m  c)[0m
+  [36m15[0m  [36m[0m
+  [36m16[0m  [36m(defn scroll-chan-events [] [0m
+  [33m17[0m  [1m  (events->chan js/window EventType/SCROLL (chan 1 (map get-scroll))))[0m
+  [0m  [0m  [33m                          ^--- Use of undeclared Var EventType/SCROLL[0m
+  [36m18[0m  [36m[0m
+  [36m19[0m  [36m[0m
+  [36m20[0m  [36m(def cur-scroll-y (r/atom 0))[0m
+  [36m21[0m  [36m[0m
+  [36m22[0m  [36m(defn listen! [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/scroll.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/scroll.cljs   line:17  column:45  ----[0m
+
+  [1mUse of undeclared Var htembh.components.scroll/chan[0m
+
+  [36m13[0m  [36m  (events/listen el event-type #(put! c %))[0m
+  [36m14[0m  [36m  c)[0m
+  [36m15[0m  [36m[0m
+  [36m16[0m  [36m(defn scroll-chan-events [] [0m
+  [33m17[0m  [1m  (events->chan js/window EventType/SCROLL (chan 1 (map get-scroll))))[0m
+  [0m  [0m  [33m                                            ^--- Use of undeclared Var htembh.components.scroll/chan[0m
+  [36m18[0m  [36m[0m
+  [36m19[0m  [36m[0m
+  [36m20[0m  [36m(def cur-scroll-y (r/atom 0))[0m
+  [36m21[0m  [36m[0m
+  [36m22[0m  [36m(defn listen! [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/scroll.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/scroll.cljs   line:26  column:17  ----[0m
+
+  [1mUse of undeclared Var htembh.components.scroll/prev-scroll-y[0m
+
+  [36m22[0m  [36m(defn listen! [][0m
+  [36m23[0m  [36m  (let [chan (scroll-chan-events)][0m
+  [36m24[0m  [36m    (go-loop [][0m
+  [36m25[0m  [36m      (let [new-y (<! chan)][0m
+  [33m26[0m  [1m        (reset! prev-scroll-y @cur-scroll-y)[0m
+  [0m  [0m  [33m                ^--- Use of undeclared Var htembh.components.scroll/prev-scroll-y[0m
+  [36m27[0m  [36m        (reset! cur-scroll-y (max 0 new-y)))[0m
+  [36m28[0m  [36m      (recur))))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/scroll.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.969 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/scroll.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/scroll.cljs   line:14  column:34  ----[0m
+
+  [1mUse of undeclared Var htembh.components.scroll/put![0m
+
+  [36m10[0m  [36m(defn- get-scroll [][0m
+  [36m11[0m  [36m  (-> (dom/getDocumentScroll) (.-y)))[0m
+  [36m12[0m  [36m[0m
+  [36m13[0m  [36m(defn- events->chan [el event-type c][0m
+  [33m14[0m  [1m  (events/listen el event-type #(put! c %))[0m
+  [0m  [0m  [33m                                 ^--- Use of undeclared Var htembh.components.scroll/put![0m
+  [36m15[0m  [36m  c)[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(defn scroll-chan-events [] [0m
+  [36m18[0m  [36m  (events->chan js/window EventType/SCROLL (chan 1 (map get-scroll))))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/scroll.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/scroll.cljs   line:18  column:45  ----[0m
+
+  [1mUse of undeclared Var htembh.components.scroll/chan[0m
+
+  [36m14[0m  [36m  (events/listen el event-type #(put! c %))[0m
+  [36m15[0m  [36m  c)[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(defn scroll-chan-events [] [0m
+  [33m18[0m  [1m  (events->chan js/window EventType/SCROLL (chan 1 (map get-scroll))))[0m
+  [0m  [0m  [33m                                            ^--- Use of undeclared Var htembh.components.scroll/chan[0m
+  [36m19[0m  [36m[0m
+  [36m20[0m  [36m[0m
+  [36m21[0m  [36m(def cur-scroll-y (r/atom 0))[0m
+  [36m22[0m  [36m[0m
+  [36m23[0m  [36m(defn listen! [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/scroll.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/scroll.cljs   line:27  column:17  ----[0m
+
+  [1mUse of undeclared Var htembh.components.scroll/prev-scroll-y[0m
+
+  [36m23[0m  [36m(defn listen! [][0m
+  [36m24[0m  [36m  (let [chan (scroll-chan-events)][0m
+  [36m25[0m  [36m    (go-loop [][0m
+  [36m26[0m  [36m      (let [new-y (<! chan)][0m
+  [33m27[0m  [1m        (reset! prev-scroll-y @cur-scroll-y)[0m
+  [0m  [0m  [33m                ^--- Use of undeclared Var htembh.components.scroll/prev-scroll-y[0m
+  [36m28[0m  [36m        (reset! cur-scroll-y (max 0 new-y)))[0m
+  [36m29[0m  [36m      (recur))))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/scroll.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.792 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/scroll.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.321 seconds.[0m
+[36m----  Could not Read  src/cljs/htembh/components/scroll.cljs   line:8 ----[0m
+
+  [1m/home/marko/clojure/htembh/src/cljs/htembh/components/scroll.cljs [line 8, col 51] Unmatched delimiter ).[0m
+
+  [36m 6[0m  [36m            [goog.dom :as dom][0m
+  [36m 7[0m  [36m            [goog.events :as events][0m
+  [33m 8[0m  [1m            [goog.events.EventType :as EventType]))[0m
+  [0m  [0m  [33m            /home/marko/clojure/htembh/src/cljs/htembh/components/scroll.cljs [line 8, col 51] Unmatched delimiter ).[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m[0m
+  [36m11[0m  [36m(defn- get-scroll [][0m
+
+[36m----  Reader Error : Please see src/cljs/htembh/components/scroll.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.026 seconds.[0m
+[36m----  Could not Read  src/cljs/htembh/components/scroll.cljs   line:8 ----[0m
+
+  [1m/home/marko/clojure/htembh/src/cljs/htembh/components/scroll.cljs [line 8, col 51] Unmatched delimiter ).[0m
+
+  [36m 6[0m  [36m            [goog.dom :as dom][0m
+  [36m 7[0m  [36m            [goog.events :as events][0m
+  [33m 8[0m  [1m            [goog.events.EventType :as EventType]))[0m
+  [0m  [0m  [33m            /home/marko/clojure/htembh/src/cljs/htembh/components/scroll.cljs [line 8, col 51] Unmatched delimiter ).[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m[0m
+  [36m11[0m  [36m(defn- get-scroll [][0m
+
+[36m----  Reader Error : Please see src/cljs/htembh/components/scroll.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/scroll.cljs   line:28  column:17  ----[0m
+
+  [1mUse of undeclared Var htembh.components.scroll/prev-scroll-y[0m
+
+  [36m24[0m  [36m(defn listen! [][0m
+  [36m25[0m  [36m  (let [chan (scroll-chan-events)][0m
+  [36m26[0m  [36m    (go-loop [][0m
+  [36m27[0m  [36m      (let [new-y (<! chan)][0m
+  [33m28[0m  [1m        (reset! prev-scroll-y @cur-scroll-y)[0m
+  [0m  [0m  [33m                ^--- Use of undeclared Var htembh.components.scroll/prev-scroll-y[0m
+  [36m29[0m  [36m        (reset! cur-scroll-y (max 0 new-y)))[0m
+  [36m30[0m  [36m      (recur))))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/scroll.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.568 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/scroll.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/htembh/components/scroll.cljs   line:27  column:17  ----[0m
+
+  [1mUse of undeclared Var htembh.components.scroll/prev-scroll-y[0m
+
+  [36m23[0m  [36m(defn listen! [][0m
+  [36m24[0m  [36m  (let [chan (scroll-chan-events)][0m
+  [36m25[0m  [36m    (go-loop [][0m
+  [36m26[0m  [36m      (let [new-y (<! chan)][0m
+  [33m27[0m  [1m        (reset! prev-scroll-y @cur-scroll-y)[0m
+  [0m  [0m  [33m                ^--- Use of undeclared Var htembh.components.scroll/prev-scroll-y[0m
+  [36m28[0m  [36m        (reset! cur-scroll-y (max 0 new-y)))[0m
+  [36m29[0m  [36m      (recur))))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/htembh/components/scroll.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.687 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/scroll.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.621 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/scroll.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.641 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/scroll.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.757 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.425 seconds.[0m
+[36m----  Could not Analyze  src/cljs/htembh/core.cljs   line:155  column:4  ----[0m
+
+  [1mToo few arguments to if at line 155 /home/marko/clojure/htembh/src/cljs/htembh/core.cljs[0m
+
+  [36m153[0m  [36m     [(pages (session/get :page))][0m
+  [36m154[0m  [36m     [(pages :home)])[0m
+  [33m155[0m  [1m   (if (> @scroll/curr-pos-y 500))])[0m
+  [0m   [0m  [33m   ^--- Too few arguments to if at line 155 /home/marko/clojure/htembh/src/cljs/htembh/core.cljs[0m
+  [36m156[0m  [36m[0m
+  [36m157[0m  [36m[0m
+  [36m158[0m  [36m(defn results-render [][0m
+
+[36m----  Analysis Error : Please see src/cljs/htembh/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.464 seconds.[0m
+[36m----  Could not Analyze  src/cljs/htembh/core.cljs   line:155  column:4  ----[0m
+
+  [1mToo few arguments to if at line 155 /home/marko/clojure/htembh/src/cljs/htembh/core.cljs[0m
+
+  [36m153[0m  [36m     [(pages (session/get :page))][0m
+  [36m154[0m  [36m     [(pages :home)])[0m
+  [33m155[0m  [1m   (if (> @scroll/cur-scroll-y 500))])[0m
+  [0m   [0m  [33m   ^--- Too few arguments to if at line 155 /home/marko/clojure/htembh/src/cljs/htembh/core.cljs[0m
+  [36m156[0m  [36m[0m
+  [36m157[0m  [36m[0m
+  [36m158[0m  [36m(defn results-render [][0m
+
+[36m----  Analysis Error : Please see src/cljs/htembh/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.693 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.387 seconds.[0m
+[36m----  Could not Read  src/cljs/htembh/core.cljs   line:155 ----[0m
+
+  [1m/home/marko/clojure/htembh/src/cljs/htembh/core.cljs [line 155, col 20] Invalid symbol: scroll/.[0m
+
+  [36m153[0m  [36m  [(pages (session/get :page))][0m
+  [36m154[0m  [36m  [(pages :home)])[0m
+  [33m155[0m  [1m(when (> scroll/@cur-scroll-y 500)[0m
+  [0m   [0m  [33m/home/marko/clojure/htembh/src/cljs/htembh/core.cljs [line 155, col 20] Invalid symbol: scroll/.[0m
+  [36m156[0m  [36m  [:button {:on-click qs/scroll-to-top} "TOP"])])[0m
+
+[36m----  Reader Error : Please see src/cljs/htembh/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.699 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.773 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.651 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.643 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.753 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.671 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.69 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css

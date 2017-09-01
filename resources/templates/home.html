@@ -34,6 +34,18 @@
         var context = "{{servlet-context}}";
         var csrfToken = "{{csrf-token}}";
 	var identity = {{identity|json|safe}};
+
+
+	window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        document.getElementById("myBtn").style.display = "block";
+        } else {
+        document.getElementById("myBtn").style.display = "none";
+        }
+        }
+	
     </script>
     {% script "/js/app.js" %}
 
