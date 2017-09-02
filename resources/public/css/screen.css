@@ -244,3 +244,8 @@ h1{
 #myBtn:hover {
     background-color: var(--letter-before);
 }
+
+
+.row{
+    text-align: center;
+}

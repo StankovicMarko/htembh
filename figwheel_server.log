@@ -4167,3 +4167,25 @@ notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/comp
 [0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.646 seconds.[0m
 notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/components/questions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.65 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.623 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.627 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.704 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.578 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.563 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.549 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/htembh/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css

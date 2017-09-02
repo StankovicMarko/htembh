@@ -92,8 +92,8 @@
                :target "_blank"} [:h4 "How to Eat, Move and Be Healthy"]]
           [:h5 "(Answer as truthfully as you can. There are 6 topics with multiple questions related to them. Questionnaire usually"  [:font {:color "#0275d8"} " takes 10 minutes"] " to complete)"]
           [qs/get-questions-btn]
-         
           [:br]
+          [:hr]
           [:br]]
          [:div.row
           [:h5 "To get your most recent results press "]
