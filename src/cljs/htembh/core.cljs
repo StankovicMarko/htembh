@@ -16,6 +16,8 @@
             [htembh.components.results :as res])
   (:import goog.History))
 
+(def book-link "https://chekandpps.infusionsoft.com/app/storeFront/showProductDetail?productId=262")
+
 (defn user-menu []
   (if-let [id (session/get :identity)]
     [:ul.nav.navbar-nav.float-xs-right
@@ -64,18 +66,18 @@
         {:on-click #(swap! collapsed? not)} "☰"]
        [:div.collapse.navbar-toggleable-xs
         (when-not @collapsed? {:class "in"})
-        [:a.navbar-brand {:href "/"} "htembh"]
+        [:a.navbar-brand {:href "/"} "Home"]
         [:ul.nav.navbar-nav
          [nav-link "#/htembh" "HTMBH" :htembh collapsed?]
-         [nav-link "#/ppd" "Primal Pattern Diet" :ppd collapsed?]
-         [nav-link "#/about" "About This Project" :about collapsed?]]
+         [nav-link "#/ppd" "PPD" :ppd collapsed?]
+         [nav-link "#/about" "About" :about collapsed?]]
         [user-menu]]])))
 
 (defn ppd-page [] ;;;about page 
   [:div.container
    [:div.row
     [:div.col-md-12
-     "this is the story of htembh... work in progress"]]])
+     "ovde dolazi PPE upitnik i rezultati"]]])
 
 (defn htembh-page []
     (let [errors (r/atom nil)]
@@ -85,12 +87,16 @@
          (when (and (not (empty? @errors)) (not (session/get :identity)))
            [:div.alert.alert-danger @errors])
          [:div.row
-          [:label "- To start questionnaire press "]
+          [:h4  "Start questionnaire from"]
+          [:a {:href book-link
+               :target "_blank"} [:h4 "How to Eat, Move and Be Healthy"]]
+          [:h5 "(Answer as truthfully as you can. There are 6 topics with multiple questions related to them. Questionnaire usually"  [:font {:color "#0275d8"} " takes 10 minutes"] " to complete)"]
           [qs/get-questions-btn]
-          
-          [:p "(There are 6 topics with multiple questions per topic, usually takes 10 minutes to complete the questionnaire)"]]
+         
+          [:br]
+          [:br]]
          [:div.row
-          [:label "- To get your most recent results press "]
+          [:h5 "To get your most recent results press "]
           [res/get-results-btn errors]]]))))
 
 (defn about-page []
@@ -103,8 +109,10 @@ to everyone. Sometimes it bothered me when i had to get pen and paper
 to mark the score, add things up. Ain't no body got time for that :)
 Hope this web app makes your life more easier and maybe helps you
  test yourself more often so you can track your progress responsibly"]]
+   [:br]
    [:div.row
     [:div.col-md-12 "Information you give wont be sold or given to anyone"]]
+   [:br]
    [:div.row
     [:div.col-md-12 "You will be able to track your progress and see your score history and see how much it improved. Of course the most important thing is that you are getting healthier, feel better, happier and enjoy life fully."]]])
 
