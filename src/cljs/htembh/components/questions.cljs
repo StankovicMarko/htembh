@@ -68,7 +68,7 @@
                           (reset-topic-num)
                           
                           )
-              :error-handler #(println @checked)
+              :error-handler #(reset! errors "There was a problem with server")
               }))
 
 
@@ -118,7 +118,9 @@
        (when-let [error @errors]
          [:div.alert.alert-danger error])
        [:button.btn.btn-default
-        {:on-click #(validate-num-responses checked errors (count questions))}
+        {:on-click #(if (not= (session/get :identity) nil)
+                      (validate-num-responses checked errors (count questions))
+                      (reset! errors "You must login first"))}
         "send responses"]])))
 
 
