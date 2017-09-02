@@ -88,22 +88,29 @@ body {
     --letter-col: #334455;
     --letter-before: #8097b3;
 }
-/*@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');*/
+
 
 body{
-    background: white;
+    /* background: white; */
+    background: var(--letter-col);
 }
 
 
 .container{
-    font-family: 'Permanent Marker', cursive;
+    /* font-family: 'Permanent Marker', cursive; */
+    /* font-family: 'Ultra', serif; */
+    /* font-family: 'Coustard', serif; */
+    /* font-family: 'Syncopate', sans-serif; */
+
     display: block;
     position: relative;
     margin: 40px auto;
     height: auto;
     width: 80%;
     padding: 20px;
-    background: var(--bg-col);
+
+    background: white;
+    /* background: var(--bg-col); */
     border-radius: 10px;
 }
 
@@ -226,7 +233,7 @@ h1{
 
 #myBtn {
 
-    font-family: 'Permanent Marker', cursive;
+    /* font-family: 'Permanent Marker', cursive; */
     display: none;
     position: fixed;
     bottom: 20px;
@@ -234,15 +241,18 @@ h1{
     z-index: 99;
     border: none;
     outline: none;
-    background-color: var(--letter-col);
+    background-color: var(--letter-before);
     color: white;
     cursor: pointer;
     padding: 15px;
     border-radius: 10px;
+
+    border: 2px solid white;
+    
 }
 
 #myBtn:hover {
-    background-color: var(--letter-before);
+    background-color: var(--letter-col);
 }
 
 

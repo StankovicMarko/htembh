@@ -120,7 +120,7 @@
        [:button.btn.btn-default
         {:on-click #(if (not= (session/get :identity) nil)
                       (validate-num-responses checked errors (count questions))
-                      (reset! errors "You must login first"))}
+                      (reset! errors "You must be logged in"))}
         "send responses"]])))
 
 

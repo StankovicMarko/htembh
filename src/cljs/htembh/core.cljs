@@ -96,8 +96,9 @@
           [:hr]
           [:br]]
          [:div.row
-          [:h5 "To get your most recent results press "]
-          [res/get-results-btn errors]]]))))
+          [:h4 "To get your most recent results press"]
+          [res/get-results-btn errors]
+          [:h5 "(Once you get results. You should focus on left most column that is not colored in green, once you heal that area it will have knock-on effect on other columns and you should retest again)"]]]))))
 
 (defn about-page []
   [:div.container

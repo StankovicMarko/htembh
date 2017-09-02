@@ -88,4 +88,4 @@
      (let [results (map-color email)]
        (assoc (assoc {} :name (:date (first results))) :data (transform-data results))))
     (response/unauthorized {:result :error
-                            :message "please login first"})))
+                            :message "You must be logged in"})))
