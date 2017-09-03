@@ -84,9 +84,9 @@ body {
 
 
 :root {
-    --bg-col: #FFDDBB;
-    --letter-col: #334455;
-    --letter-before: #8097b3;
+    /* --bg-col: #FFDDBB; */
+    --letter-col: #331122;
+    --letter-before: #CCBBAA;
 }
 
 
@@ -94,6 +94,10 @@ body{
     /* background: white; */
     background: var(--letter-col);
     font-family: 'Carter One', cursive;
+    
+
+    background-image: url("../img/1.jpg");
+    /* background-size: 100%; */
 }
 
 
@@ -213,7 +217,7 @@ h1{
     color: white;
     background: var(--letter-col);
     border-radius: 10px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
 }
 
 
@@ -241,18 +245,20 @@ h1{
     z-index: 99;
     border: none;
     outline: none;
-    background-color: var(--letter-before);
+    background-color: var(--letter-col);
     color: white;
     cursor: pointer;
     padding: 15px;
     border-radius: 10px;
 
-    border: 2px solid white;
+    border: 0.5px solid white;
     
 }
 
 #myBtn:hover {
-    background-color: var(--letter-col);
+    background-color: var(--letter-before);
+    color: var(--letter-col);
+    border: 0.5px solid var(--letter-col);
 }
 
 
