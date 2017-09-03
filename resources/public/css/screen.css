@@ -93,15 +93,11 @@ body {
 body{
     /* background: white; */
     background: var(--letter-col);
+    font-family: 'Carter One', cursive;
 }
 
 
 .container{
-    /* font-family: 'Permanent Marker', cursive; */
-    /* font-family: 'Ultra', serif; */
-    /* font-family: 'Coustard', serif; */
-    /* font-family: 'Syncopate', sans-serif; */
-
     display: block;
     position: relative;
     margin: 40px auto;
@@ -228,6 +224,10 @@ h1{
 		    /* heigth: 100%; */
 		    /*min-width: 100% !important;*/
 		    font-size: 10px;
+		}
+
+		.ul .li label{
+                    padding: 20px 25px 65px 80px;
 		}
 }
 
