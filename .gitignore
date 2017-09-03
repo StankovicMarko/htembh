@@ -14,4 +14,4 @@ profiles.clj
 *#
 .#*
 *~
-*.log
+/figwheel_server.log
