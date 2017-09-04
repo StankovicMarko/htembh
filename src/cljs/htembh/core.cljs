@@ -4,9 +4,6 @@
             [secretary.core :as secretary :include-macros true]
             [goog.events :as events]
             [goog.history.EventType :as HistoryEventType]
-
-            [goog.dom :as dom]
-            
             [markdown.core :refer [md->html]]
             [htembh.ajax :refer [load-interceptors!]]
             [ajax.core :refer [GET POST]]
@@ -17,17 +14,22 @@
   (:import goog.History))
 
 (def book-link "https://chekandpps.infusionsoft.com/app/storeFront/showProductDetail?productId=262")
+(def inst-link "https://chekinstitute.com/")
+(def blog-link "https://www.paulcheksblog.com/")
+(def yt-link "https://www.youtube.com/user/PaulChekLive/videos")
+(def recom-books-link "http://astore.amazon.com/paulchekseminars?_encoding=UTF8&node=1")
 
 (defn user-menu []
   (if-let [id (session/get :identity)]
-    [:ul.nav.navbar-nav.float-xs-right
+    [:ul.nav.navbar-nav.float-md-right.float-xs-left
      [:li.nav-item
       [:a.dropdown-item.btn
        {:on-click #(POST
                     "/api/logout"
-                    {:handler (fn [] (session/remove! :identity))})}
+                    {:handler (fn [] (do (session/remove! :identity)
+                                         (session/remove! :highcharts-data)))})}
        [:i.fa.fa-user] " " id " | sign out"]]]
-    [:ul.nav.navbar-nav.float-xs-right
+    [:ul.nav.navbar-nav.float-md-right.float-xs-left
      [:li.nav-item [l/login-button]]
      [:li.nav-item [reg/registration-button]]]))
 
@@ -66,28 +68,43 @@
         {:on-click #(swap! collapsed? not)} "☰"]
        [:div.collapse.navbar-toggleable-xs
         (when-not @collapsed? {:class "in"})
-        [:a.navbar-brand {:href "/"} "Home"]
+        ;; [:a.navbar-brand {:href "/"} "Home"]
         [:ul.nav.navbar-nav
-         [nav-link "#/htembh" "HTMBH" :htembh collapsed?]
+         [nav-link "#/home" "Home" :home collapsed?]
+         [nav-link "#/htembh" "HTEMBH" :htembh collapsed?]
          [nav-link "#/ppd" "PPD" :ppd collapsed?]
          [nav-link "#/about" "About" :about collapsed?]]
         [user-menu]]])))
 
-(defn ppd-page [] ;;;about page 
-  [:div.container
-   [:div.row
-    [:div.col-md-12
-     "ovde dolazi PPE upitnik i rezultati"]]])
+(defn ppd-page [] ;;;about page
+  (do
+    (let [email (session/get :identity)
+          page (session/get :page)]
+      (session/clear!)
+      (session/put! :page page)
+      (session/put! :identity email))
+    (fn []
+      [:div.container
+       [:div.row
+        [:div.col-md-12
+         "ovde dolazi PPE upitnik i rezultati"]]])))
 
 (defn htembh-page []
+  (do
+    (let [email (session/get :identity)
+          page (session/get :page)]
+      (session/clear!)
+      (session/put! :page page)
+      (session/put! :identity email))
+    (fn []
     (let [errors (r/atom nil)]
       (fn []
         (if (not (session/get :questions))
         [:div.container
-         (when (and (not (empty? @errors)) (not (session/get :identity)))
+         (when  (not (empty? @errors))
            [:div.alert.alert-danger @errors])
          [:div.row
-          [:h4  "Start questionnaire from"]
+          [:h4  "Start Nutrition and Lifestyle questionnaire from"]
           [:a {:href book-link
                :target "_blank"} [:h4 "How to Eat, Move and Be Healthy"]]
           [:h5 "(Answer as truthfully as you can. There are 6 topics with multiple questions related to them. Questionnaire usually"  [:font {:color "#0275d8"} " takes 10 minutes"] " to complete)"]
@@ -98,35 +115,80 @@
          [:div.row
           [:h4 "To get your most recent results press"]
           [res/get-results-btn errors]
-          [:h5 "(Once you get results. You should focus on left most column that is not colored in green, once you heal that area it will have knock-on effect on other columns and you should retest again)"]]]))))
+          [:h5 "(Once you get results. You should focus on left most column that is not colored in green, once you heal that area it will have knock-on effect on other areas and you should retest again)"]]]))))))
 
 (defn about-page []
+  (do
+    (let [email (session/get :identity)
+          page (session/get :page)]
+      (session/clear!)
+      (session/put! :page page)
+      (session/put! :identity email))
+    (fn []
   [:div.container
    [:div.row
     [:div.col-md-12
-     "This is fan project. HTEMBH(link to amazon) changed my life.
-The reason i wanted to make this is to make questions more accesable
-to everyone. Sometimes it bothered me when i had to get pen and paper
-to mark the score, add things up. Ain't no body got time for that :)
-Hope this web app makes your life more easier and maybe helps you
- test yourself more often so you can track your progress responsibly"]]
+     [:h3 "Basic Info: "]
+     [:h5 "I've used book for 2 years now. After few times of testing myself i wanted to see my progress and have my results in one place. That is why i decided to make this small web application."]]]
    [:br]
    [:div.row
-    [:div.col-md-12 "Information you give wont be sold or given to anyone"]]
+    [:div.col-md-12
+     [:h3 "Tutorial:"]
+     [:h5 "Register, Login and use application"]
+     [:h5 "- HTEMBH tab is Nutrition and Lifestyle questionnaire from "
+      [:a {:href book-link} "the book "] "and it is used to determine your over all stress levels and to show you what you need to focus on"]
+     [:h5 "- PPD tab is for Primal Pattern® Diet questionnaire and it is used to determine your metabolic type"]
+     [:h5 "- On every page(tab) there is button results which tells you your latest results based on answers. (plan is to have history of your answers in another chart that feature will come in future)"]]]
    [:br]
    [:div.row
-    [:div.col-md-12 "You will be able to track your progress and see your score history and see how much it improved. Of course the most important thing is that you are getting healthier, feel better, happier and enjoy life fully."]]])
+    [:div.col-md-12
+     [:h3 "Learn more:"]
+     [:a {:href inst-link
+          :target "_blank"} [:h5 "Chek Institute"]]
+     [:a {:href blog-link
+          :target "_blank"} [:h5 "Paul Chek's blog"]]
+     [:a {:href yt-link
+          :target "_blank"} [:h5 "Paul Chek's youtube"]]
+     [:a {:href recom-books-link
+          :target "_blank"} [:h5 "Recommended reading list"]]]]
+   [:br]
+   [:div.row
+    [:div.col-md-12
+     [:h3 "Contact me:"]
+     [:a {:target "_blank"
+          :href "https://www.linkedin.com/in/marko-stankovic-053552113/"}
+      [:img {:src "../img/in.png"
+             :title "Linkedin"
+             :height "75px"}]]
+     [:a {:target "_blank"
+          :href "https://github.com/StankovicMarko"}
+      [:img {:src "../img/github.png"
+             :title "Github"
+             :height "75px"}]]
+     ]]
+   ])))
 
 (defn home-page []
+  (do
+    (let [email (session/get :identity)
+          page (session/get :page)]
+      (session/clear!)
+      (session/put! :page page)
+      (session/put! :identity email))
+    (fn []
   [:div.container
    [:div.row
-    [:p "Welcome to site"]]
+    [:h2 "Welcome"]
+    [:h5 "This site was intended for book readers of: " 
+     [:a {:target "_blank"
+          :href book-link} "How to Eat, Move and Be Healthy"]]]
    [:div.row
-    [:a {:href "/#/htembh"} "HTEMBH Questionnaire"]]
+    [:h5 "For more details read: " [:a {:href "/#/about"} "About this site"]]]
    [:div.row
-    [:a {:href "/#/ppd"} "PPD Questionnaire"]]
+    [:h5 "Start Nutrition & Lifestyle questionnaire by clicking: " [:a {:href "/#/htembh"} "here"]]]
    [:div.row
-    [:a {:href "/#/about"} "About this site"]]])
+    [:h5 "Start Primal Pattern® Diet questionnaire by clicking: " [:a {:href "/#/ppd"} "here"]]]
+   ])))
 
 
 ;; (defn about-page []
@@ -188,7 +250,7 @@ Hope this web app makes your life more easier and maybe helps you
 ;; Routes
 (secretary/set-config! :prefix "#")
 
-(secretary/defroute "/" []
+(secretary/defroute "/home" []
   (session/put! :page :home))
 
 (secretary/defroute "/htembh" []

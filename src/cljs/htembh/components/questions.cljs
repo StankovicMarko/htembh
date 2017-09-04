@@ -29,7 +29,8 @@
 (defn get-questions-btn []
   [:button.btn.btn-default.btn-xl 
    {:on-click #(do (get-questions @topic-num)
-                   (get-topic-name @topic-num))}
+                   (get-topic-name @topic-num)
+                   (session/remove! :highcharts-data))}
    "get questions"])
 
 (defn get-next-questions []

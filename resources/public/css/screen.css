@@ -92,7 +92,7 @@ body {
 
 body{
     /* background: white; */
-    background: var(--letter-col);
+    /* background: var(--letter-col); */
     font-family: 'Carter One', cursive;
     
 
@@ -221,18 +221,35 @@ h1{
 }
 
 
-@media (max-width: 600px) {
-		.container{
-		    width: 100%;
-		    margin: auto;
-		    /* heigth: 100%; */
-		    /*min-width: 100% !important;*/
-		    font-size: 10px;
-		}
+@media (max-width: 34em) {
+    body{
+	background: white;
+    }
+    .container{
+	width: 100%;
+	margin: auto;
+	/* heigth: 100%; */
+	/*min-width: 100% !important;*/
+	font-size: 10px;
+    }
+    
+    .ul .li label{
+        padding: 20px 25px 65px 80px;
+    }
+}
 
-		.ul .li label{
-                    padding: 20px 25px 65px 80px;
-		}
+@media (max-width: 768px) {
+    .container{
+        /* width: 100%; */
+        /* margin: auto; */
+        /* heigth: 100%; */
+        /*min-width: 100% !important;*/
+        font-size: 14px;
+    }
+    
+    .ul .li label{
+        padding: 14px 25px 65px 80px;
+    }
 }
 
 #myBtn {

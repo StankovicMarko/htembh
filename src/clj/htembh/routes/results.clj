@@ -84,8 +84,11 @@
 
 (defn highcharts-data [email]
   (if-let [user (db/get-user {:email email})]
-    (response/ok
-     (let [results (map-color email)]
-       (assoc (assoc {} :name (:date (first results))) :data (transform-data results))))
+    (if-let [res (>= (count (db/get-results {:email email})) 6)]
+      (response/ok
+       (let [results (map-color email)]
+         (assoc (assoc {} :name (:date (first results))) :data (transform-data results))))
+      (response/precondition-failed {:result :error
+                                       :message "You must answer all questions before getting results"}))
     (response/unauthorized {:result :error
                             :message "You must be logged in"})))
