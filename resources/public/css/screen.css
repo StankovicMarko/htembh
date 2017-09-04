@@ -240,10 +240,7 @@ h1{
 
 @media (max-width: 768px) {
     .container{
-        /* width: 100%; */
-        /* margin: auto; */
-        /* heigth: 100%; */
-        /*min-width: 100% !important;*/
+	
         font-size: 14px;
     }
     
