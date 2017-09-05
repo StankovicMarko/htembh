@@ -43,5 +43,9 @@
    "Get Results"])
 
 
-
+;;;;;;;;;; PPD results
+(defn get-ppd-results-btn [errors]
+  [:button.btn.btn-default.btn-xl 
+   {:on-click #(do (get-results (session/get :identity) errors))}
+   "Get Results"])
 

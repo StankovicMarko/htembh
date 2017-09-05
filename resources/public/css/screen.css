@@ -2,7 +2,7 @@ html,
 body {
 	/*font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
     height: 100%;
-	/*text-align: center;*/
+    /*text-align: center;*/
 
 }
 .navbar {
@@ -221,6 +221,31 @@ h1{
 }
 
 
+
+.ul .li label.ppd{
+    padding: 20px 0px 370px 80px;
+}
+
+
+.ul .li .check.ppd{
+    top: 45px;
+}
+
+@media (max-width: 768px) {
+    .container{
+        
+        font-size: 14px;
+    }
+    
+    .ul .li label{
+        padding: 14px 25px 65px 80px;
+    }
+
+    .ul .li label.ppd{
+        padding: 20px 0px 470px 80px;
+    }
+}
+
 @media (max-width: 34em) {
     body{
 	background: white;
@@ -236,18 +261,14 @@ h1{
     .ul .li label{
         padding: 20px 25px 65px 80px;
     }
+
+    .ul .li label.ppd{
+	/* font-size: 15px; */
+        padding: 20px 0px 380px 80px;
+    }
 }
 
-@media (max-width: 768px) {
-    .container{
-	
-        font-size: 14px;
-    }
-    
-    .ul .li label{
-        padding: 14px 25px 65px 80px;
-    }
-}
+
 
 #myBtn {
 

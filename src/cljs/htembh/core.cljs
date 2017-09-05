@@ -84,10 +84,25 @@
       (session/put! :page page)
       (session/put! :identity email))
     (fn []
-      [:div.container
-       [:div.row
-        [:div.col-md-12
-         "ovde dolazi PPE upitnik i rezultati"]]])))
+      (let [errors (r/atom nil)]
+        (fn []
+          (if (not (session/get :ppd-questions))
+            [:div.container
+             (when  (not (empty? @errors))
+               [:div.alert.alert-danger @errors])
+             [:div.row
+              [:h4  "Start Primal Pattern Diet questionnaire from"]
+              [:a {:href book-link
+                   :target "_blank"} [:h4 "How to Eat, Move and Be Healthy"]]
+              [:h5 "(Answer as truthfully as you can. This will help you determine your Primal Pattern Eating Type. Questionnaire usually"  [:font {:color "#0275d8"} " takes couple of minutes"] " to complete)"]
+              [qs/get-ppd-questions-btn]
+              [:br]
+              [:hr]
+              [:br]]
+             [:div.row
+              [:h4 "To get your most recent results press"]
+              [res/get-ppd-results-btn errors]
+              [:h5 "(To get the most accurate results retest again)"]]]))))))
 
 (defn htembh-page []
   (do
@@ -115,7 +130,7 @@
          [:div.row
           [:h4 "To get your most recent results press"]
           [res/get-results-btn errors]
-          [:h5 "(Once you get results. You should focus on left most column that is not colored in green, once you heal that area it will have knock-on effect on other areas and you should retest again)"]]]))))))
+          [:h5 "(Once you get results you should focus on left most column that is not colored in green. Once you heal that area it will have knock-on effect on other areas and you should retest again)"]]]))))))
 
 (defn about-page []
   (do
@@ -221,6 +236,8 @@
    [modal]
    (when-let [questions (session/get :questions)]
      [qs/questions-form  questions])
+   (when-let [ppd-questions (session/get :ppd-questions)]
+     [qs/ppd-questions-form  ppd-questions])
    (if (not= (session/get :page) nil)
      [(pages (session/get :page))]
      [(pages :home)])

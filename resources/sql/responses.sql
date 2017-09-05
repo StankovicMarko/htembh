@@ -227,7 +227,7 @@ insert into responses(text, points)values('my dinner is composed mainly of veget
 insert into responses(text, points)values('if I dont eat sweet deserts like cakes, candy or cookies, If I eat a rich desert that is not overly sweet, such as high-quality full-fat ice cream, I tend to sleep okay.',1);
 insert into responses(text, points)values('if I occasionally eat a sweet desert before i go to bed.',-1);
 insert into responses(text, points)values('foods or drinks with higher protein and/or fat content, such as a high-protein shake.',1);
-insert into responses(text, points)values('foods or drinks higher in carbohydrates(sweeter), such as Gatorade.',-1);
+insert into responses(text, points)values('foods or drinks higher in carbohydrates (sweeter), such as Gatorade.',-1);
 insert into responses(text, points)values('a meat-based meal containing heavier meats such as chiken legs, roast beef and salmon, with a smaller portion of carbohydrate.',1);
 insert into responses(text, points)values('a carbohydrate-based meal containing vegetables, bread or rice and a small portion of a lighter meat such as chiken breat or white fish.',-1);
 insert into responses(text, points)values('I get a rush of energy, but then I am likely to crash or feel sluggish',1);
