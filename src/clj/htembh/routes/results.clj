@@ -45,7 +45,8 @@
 
 
 (defn get-results [email]
-  (get-last-ones (db/get-results {:email email})))
+  ;;;gets all results from db and removes topic 7 which is another(ppd) questionnaire
+  (get-last-ones (filter #(not= 7 (:topic %)) (db/get-results {:email email}))))
 
 
 (defn unparse-date [email]
@@ -82,13 +83,37 @@
   (vec (map #(assoc (assoc {} :y (:points %)) :color (:color %)) results)))
 
 
+(defn verify-completed-qs [email]
+  (when-let [available (map #(:topic %) (db/topics-user-results {:email email}))]
+    (= [1 2 3 4 5 6] available)))
+
 (defn highcharts-data [email]
   (if-let [user (db/get-user {:email email})]
-    (if-let [res (>= (count (db/get-results {:email email})) 6)]
+    (if (verify-completed-qs email)
       (response/ok
        (let [results (map-color email)]
          (assoc (assoc {} :name (:date (first results))) :data (transform-data results))))
       (response/precondition-failed {:result :error
                                        :message "You must answer all questions before getting results"}))
+    (response/unauthorized {:result :error
+                            :message "You must be logged in"})))
+
+
+;;;;;;; ppd results
+
+(defn return-which-graph [points]
+  (cond
+    (<= points -3) 0
+    (and (>= points -2) (<= points 2)) 1
+    (>= points 3) 2))
+
+(defn ppd-results [email]
+  (if-let [user (db/get-user {:email email})]
+    (if-let [result (first (reverse (sort-by :date (filter #(= 7 (:topic %)) (db/get-results {:email email})))))]
+      (response/ok
+       (let [graph-id (return-which-graph (:points result))]
+         (assoc {} :graph-id graph-id)))
+      (response/precondition-failed {:result :error
+                                     :message "You must answer all questions before getting results"}))
     (response/unauthorized {:result :error
                             :message "You must be logged in"})))

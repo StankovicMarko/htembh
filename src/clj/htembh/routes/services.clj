@@ -119,4 +119,10 @@
          :header-params [email :- String]
          :summary "returns his last results"
          (res/highcharts-data email))
+
+    (GET "/results/ppd" [email]
+         :header-params [email :- String]
+         :summary "returns his last results"
+         (res/ppd-results email))
+    
 ))

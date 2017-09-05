@@ -55,6 +55,9 @@ select topic, points, date from user_responses where user = :email order by date
 -- select topic,points, max(date)
 -- from user_responses where user = :email group by topic order by max(date)
 
+-- :name topics-user-results :? :*
+-- :docs returns distinct topics from user responses
+select distinct topic from user_responses where user = :email and topic < 7;
 
 ---- ovo je resenje da hugsql povezuje pitanja i odgovore, moze se desiti da je efikasnije od onoga sto vec imam. neka bude opcija pa cemo videti posle
 -- -- :name get-q&r :? :*

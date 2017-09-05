@@ -263,6 +263,23 @@
                    :component-did-update results-did-mount
                    :component-did-mount results-did-mount}))
 
+
+(defn ppd-results-render []
+  (if (and (not (session/get :ppd-questions)) (session/get :highcharts-ppd-data))
+    [:div {:style {:min-width "310px" :max-width "1200px"
+                   :height "600px" :margin "0 auto"}}]))
+
+
+(defn ppd-results-did-mount [this]
+  (if (and (not (session/get :ppd-questions)) (session/get :highcharts-ppd-data))
+    (js/Highcharts.Chart. (r/dom-node this)
+                          (clj->js (get res/ppd-charts (session/get :highcharts-ppd-data))))))
+
+(defn ppd-results []
+  (r/create-class {:reagent-render ppd-results-render
+                   :component-did-update ppd-results-did-mount
+                   :component-did-mount ppd-results-did-mount}))
+
 ;; -------------------------
 ;; Routes
 (secretary/set-config! :prefix "#")
@@ -298,7 +315,9 @@
 (defn mount-components []
   (r/render [#'navbar] (.getElementById js/document "navbar"))
   (r/render [#'page] (.getElementById js/document "app"))
-  (r/render [#'results] (.getElementById js/document "results")))
+  (r/render [#'results] (.getElementById js/document "results"))
+  (r/render [#'ppd-results] (.getElementById js/document "ppd-results"))
+  )
 
 
 (defn init! []

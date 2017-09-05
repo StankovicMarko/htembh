@@ -62,9 +62,10 @@
               :params {:responses (vec (map #(second %) @checked))
                        :user (session/get :identity)}
               :handler #(do
-                          (reset! checked
-                                  {:responses []
-                                   :user (session/get :identity)})
+                          (reset! checked {})
+                          ;; (reset! checked
+                          ;;         {:responses []
+                          ;;          :user (session/get :identity)})
                           (reset! errors nil)
                           (reset-topic-num)
                           
@@ -141,7 +142,8 @@
   [:button.btn.btn-default.btn-xl 
    {:on-click #(do (get-ppd-questions)
                    (get-topic-name 7)
-                   (session/remove! :highcharts-data))}
+                   (session/remove! :highcharts-data)
+                   (session/remove! :highcharts-ppd-data))}
    "Get Questions"])
 
 
@@ -153,9 +155,11 @@
               :params {:responses (vec (map #(second %) @checked))
                        :user (session/get :identity)}
               :handler #(do
-                          (reset! checked
-                                  {:responses []
-                                   :user (session/get :identity)})
+                          (reset! checked {})
+                          ;; (prn (map (fn [x] (second x)) @checked))
+                          ;; (reset! checked
+                          ;;         {:responses []
+                          ;;          :user (session/get :identity)})
                           (reset! errors nil)
                           (session/remove! :ppd-questions)
                           )
