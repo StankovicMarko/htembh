@@ -4,7 +4,9 @@ Clojure web app for HTEMBH users
 
 ## Prerequisites
 
-You will need [Leiningen][1] 2.0 or above installed.
+You will need:
+
+[Leiningen][1] 2.0 or above installed.
 
 [Postgresql][2] 9.3 or above installed
 with "htembh_dev" database created
@@ -15,11 +17,10 @@ and user that can select and insert on all tables.
 
 ## Breaking changed
 
-htembh 0.3.0
+htembh 0.3.0 -
 Project has been updated to be used on postgresql db
 
-htembh 0.2.0
-
+htembh 0.2.0 -
 Project is updated to newest version of luminus
 follow instructions below to be able to start project properly
 
@@ -33,7 +34,7 @@ Add in root folder (luminus template):
     and in it:
 
     {:profiles/dev {:env {:database-url "jdbc:postgresql://localhost/htembh_dev?user=(USERNAME)password=(PASSWORD)"}}
- :profiles/test {:env {:database-url "jdbc:postgresql://localhost/htembh_dev?user=(USERNAME)&password=(PASSWORD)"}}}
+     :profiles/test {:env {:database-url "jdbc:postgresql://localhost/htembh_dev?user=(USERNAME)&password=(PASSWORD)"}}}
 
     
 
