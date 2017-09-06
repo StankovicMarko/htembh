@@ -6,12 +6,17 @@ Clojure web app for HTEMBH users
 
 You will need [Leiningen][1] 2.0 or above installed.
 
-MySQL with "htembh_dev" database created
+[Postgresql][2] 9.3 or above installed
+with "htembh_dev" database created
+and user that can select and insert on all tables.
 
 [1]: https://github.com/technomancy/leiningen
-
+[2]: https://www.postgresql.org/
 
 ## Breaking changed
+
+htembh 0.3.0
+Project has been updated to be used on postgresql db
 
 htembh 0.2.0
 
@@ -27,8 +32,8 @@ Add in root folder (luminus template):
 
     and in it:
 
-    {:profiles/dev  {:env {:database-url "mysql://localhost:3306/htembh_dev?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&user=USERNAME&password=PASSWORD"}}
-     :profiles/test {:env {:database-url "mysql://localhost:3306/htembh_test?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&user=USERNAME&password=PASSWORD"}}}
+    {:profiles/dev {:env {:database-url "jdbc:postgresql://localhost/htembh_dev?user=(USERNAME)password=(PASSWORD)"}}
+ :profiles/test {:env {:database-url "jdbc:postgresql://localhost/htembh_dev?user=(USERNAME)&password=(PASSWORD)"}}}
 
     
 
@@ -39,7 +44,7 @@ Run migrations:
 
 Run sql scripts from resources/sql in this order:
 
-    topic.sql > questions.sql > responses.sql > connection.sql
+    topic.sql > questions.sql > responses.sql > qu_re_connection.sql
 
 
 To start a web server for the application, run:

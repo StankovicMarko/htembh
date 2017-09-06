@@ -19,7 +19,7 @@
                  [metosin/muuntaja "0.3.2"]
                  [metosin/ring-http-response "0.9.0"]
                  [mount "0.1.11"]
-                 [mysql/mysql-connector-java "6.0.5"]
+                 ;; [mysql/mysql-connector-java "6.0.5"]
                  [org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.854" :scope "provided"]
                  [org.clojure/tools.cli "0.3.5"]
