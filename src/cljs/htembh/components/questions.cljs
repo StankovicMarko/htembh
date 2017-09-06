@@ -60,7 +60,7 @@
   (ajax/POST (str "/api/responses/" topic)
              {
               :params {:responses (vec (map #(second %) @checked))
-                       :user (session/get :identity)}
+                       :email (session/get :identity)}
               :handler #(do
                           (reset! checked {})
                           ;; (reset! checked
@@ -153,7 +153,7 @@
   (ajax/POST (str "/api/responses/" topic)
              {
               :params {:responses (vec (map #(second %) @checked))
-                       :user (session/get :identity)}
+                       :email (session/get :identity)}
               :handler #(do
                           (reset! checked {})
                           ;; (prn (map (fn [x] (second x)) @checked))

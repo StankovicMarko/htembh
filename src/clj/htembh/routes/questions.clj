@@ -73,22 +73,22 @@
         min-num (count (db/get-questions {:topic topic}))]
     (= sent min-num)))
 
-(defn validate-user [user]
-  (boolean (db/get-user {:email user})))
+(defn validate-user [email]
+  (boolean (db/get-user {:email email})))
 
-(defn save-responses [responses user topic]
+(defn save-responses [responses email topic]
   ;; (println responses user topic)
-  (if (and (validate-num-responses responses topic) (validate-user user))
+  (if (and (validate-num-responses responses topic) (validate-user email))
     (let [points (int
                   (reduce +
                           (map #(:points %)
                                (db/calculate-points {:ids responses}))))
-          date (l/local-now)]
+          submitted (l/local-now)]
       (try
-        (db/create-user-response {:user user
+        (db/create-user-response {:email email
                                   :topic topic
                                   :points points
-                                  :date date})
+                                  :submitted submitted})
         (-> {:result :ok}
            (response/ok))
         (catch Exception e

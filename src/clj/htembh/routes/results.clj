@@ -85,7 +85,7 @@
 
 (defn verify-completed-qs [email]
   (when-let [available (map #(:topic %) (db/topics-user-results {:email email}))]
-    (= [1 2 3 4 5 6] available)))
+    (= [1 2 3 4 5 6] (sort available))))
 
 (defn highcharts-data [email]
   (if-let [user (db/get-user {:email email})]

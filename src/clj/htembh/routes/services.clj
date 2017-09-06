@@ -104,16 +104,16 @@
          :path-params [topic :- String]
          (qs/get-questions&responses (read-string topic)))
   
-    (POST "/responses/:topic" [responses user topic]
+    (POST "/responses/:topic" [responses email topic]
           :summary "posting user responses"
           :body [rq s/Any]
           ;; :path-params [topic :- Long]
           ;; :return Result
-          (qs/save-responses responses user topic))
+          (qs/save-responses responses email (read-string topic)))
 
     (GET "/topic/:topic" [topic]
          :summary "returns name of topic"
-         (ok (qs/get-topic-name topic)))
+         (ok (qs/get-topic-name (read-string topic))))
 
     (GET "/results" [email]
          :header-params [email :- String]

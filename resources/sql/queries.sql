@@ -41,8 +41,8 @@ select points from responses where id in (:v*:ids)
 -- :name create-user-response :! :n
 -- :doc creates user-response
 insert into user_responses
-(user, topic, points, date)
-values (:user, :topic, :points, :date)
+(email, topic, points, submitted)
+values (:email, :topic, :points, :submitted)
 
 -- :name get-topic-name :? :1
 -- :doc returns topic name for given id
@@ -51,13 +51,13 @@ select name from topics where id = :topic
 
 -- :name get-results :? :*
 -- :doc returns results for given email
-select topic, points, date from user_responses where user = :email order by date desc
+select topic, points, submitted from user_responses where email = :email order by submitted desc
 -- select topic,points, max(date)
 -- from user_responses where user = :email group by topic order by max(date)
 
 -- :name topics-user-results :? :*
 -- :docs returns distinct topics from user responses
-select distinct topic from user_responses where user = :email and topic < 7;
+select distinct topic from user_responses where email = :email and topic < 7;
 
 ---- ovo je resenje da hugsql povezuje pitanja i odgovore, moze se desiti da je efikasnije od onoga sto vec imam. neka bude opcija pa cemo videti posle
 -- -- :name get-q&r :? :*
