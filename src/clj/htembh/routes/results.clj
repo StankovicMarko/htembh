@@ -65,9 +65,9 @@
           green (:green p-range)
           yellow (:yellow p-range)]
       (cond
-        (< res-p green) (add-color map "green")
-        (and (>= res-p green) (< res-p yellow)) (add-color map "yellow")
-        :else (add-color map "red")))))
+        (< res-p green) (add-color map "Green")
+        (and (>= res-p green) (< res-p yellow)) (add-color map "Yellow")
+        :else (add-color map "Red")))))
 
 (defn make-total [seq]
   (conj (vec seq) {:topic "TOTAL"

@@ -14,7 +14,14 @@
            :title {:text "Points"
                    :align "high"}
            :labels {:overflow "justify"}}
-   :tooltip {:valueSuffix " points"}
+   :tooltip {
+             :headerFormat "<b>{point.x}</b><br/>"
+             :pointFormat "<div style=\"margin-right: 3px; margin-top: 5px; float: left; height: 5px; width: 5px; border-radius: 50%; background:{point.color}\">
+             </div>{series.name}: <b>{point.y} points</b><br/>Priority: <b>{point.color}</b>"
+             :useHTML true
+             
+             }
+   ;; {:valueSuffix " points"}
    :plotOptions {:column {:dataLabels {:enabled true}}}
    :legend {:layout "vertical"
             :align "center"
