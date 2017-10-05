@@ -59,4 +59,4 @@ To compile ClojureScript front-end, run:
 
 ## License
 
-Copyright © 2017 FIXME
+Copyright © 2017 Marko Stankovic
